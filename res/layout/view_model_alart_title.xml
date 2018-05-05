@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+  <RelativeLayout
+      android:id="@+id/rl_view_model_alart_title"
+      android:layout_width="match_parent"
+      android:layout_height="40dip"
+      android:layout_marginBottom="2dip"
+    
+       >
+
+                <ImageView
+                    android:id="@+id/iv_listitem_activity_webmusicfirst_info"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/definedalart_nor" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@+id/iv_listitem_activity_webmusicfirst_info" >
+
+                    <TextView
+                        android:id="@+id/tv_activity_awakealart_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/alart_awake_title"
+                        android:textColor="@color/alart_graycolor"
+                        
+                        android:textSize="@dimen/textSize_bigger" />
+  				<include
+  				android:id="@+id/include_view_model_edittext_alrttitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/view_model_edittext_alartcommenttitle" 
+                android:visibility="gone"/>
+                     
+ 
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  style="@style/horDiver_withMarginStyle"
+                layout="@layout/model_diver_hor_whitebg" />
+</LinearLayout>

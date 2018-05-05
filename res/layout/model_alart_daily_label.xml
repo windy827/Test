@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alart_edit_rlHeight" >
+
+        <Button
+            android:id="@+id/bt_alart_dailylabel1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/alart_edit_bt_labelWidth"
+            android:layout_height="@dimen/alart_edit_bt_labelHeight"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alart_edit_MarginLeft"
+            android:background="@drawable/blue_round_selector"
+            android:textSize="@dimen/alart_edit_textsize_min"
+            android:text="@string/alart_edit_daily1" />
+
+        <Button
+            android:id="@+id/bt_alart_dailylabel2"
+            style="?android:attr/buttonStyleSmall"
+           android:layout_width="@dimen/alart_edit_bt_labelWidth"
+           android:layout_height="@dimen/alart_edit_bt_labelHeight"
+             android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/bt_alart_dailylabel1"
+            android:background="@drawable/red_round_selector"
+             android:textSize="@dimen/alart_edit_textsize_min"
+            android:text="@string/alart_edit_daily2" />
+
+        <Button
+            android:id="@+id/bt_alart_dailylabel3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/alart_edit_bt_labelWidth"
+            android:layout_height="@dimen/alart_edit_bt_labelHeight"
+             android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/bt_alart_dailylabel2"
+            android:background="@drawable/green_round_selector"
+             android:textSize="@dimen/alart_edit_textsize_min"
+            android:text="@string/alart_edit_daily3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alart_edit_rlHeight" 
+        android:layout_marginBottom="2dp">
+
+        <ImageView
+            android:id="@+id/iv_listitem_rings"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/alart_edit_MarginLeft"
+            android:src="@drawable/suggestion" />
+
+        <EditText
+            android:id="@+id/et_alart_dailylabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dip"
+            android:layout_toRightOf="@+id/iv_listitem_rings"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/alart_edit_label_hinit"
+             android:gravity="top|left"
+             android:textSize="@dimen/alart_edit_textsize_min"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_alart_daily_incidentlength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/alart_edit_textsize_min"
+            android:text="0/10" />
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+</LinearLayout>

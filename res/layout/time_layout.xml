@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/translate"
+    tools:context="com.amo.demo.wheelview.DateWheelView" >
+
+    <LinearLayout
+        android:id="@+id/ll_timelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/timePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+             >
+
+            <com.amo.demo.arrWheelview.StrArrayWheelView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7" />
+
+            <RelativeLayout
+                android:id="@+id/rl_year"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"      
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize_large"
+                    android:text="年" />
+
+            </RelativeLayout>
+
+            <com.amo.demo.arrWheelview.StrArrayWheelView
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/rl_month"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize_large"
+                    android:text="月" />
+            </RelativeLayout>
+
+            <com.amo.demo.arrWheelview.StrArrayWheelView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/rl_day"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                   <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize_large"
+                    android:text="日" />
+            </RelativeLayout>
+
+            <com.amo.demo.arrWheelview.StrArrayWheelView
+                android:id="@+id/hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                      <TextView
+                    android:id="@+id/tv_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize_large"
+                    android:text="时" />
+            </RelativeLayout>
+
+            <com.amo.demo.arrWheelview.StrArrayWheelView
+                android:id="@+id/mins"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_min"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+
+                         <TextView
+                    android:id="@+id/tv_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/textSize_large"
+                    android:text="分" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:layout_marginTop="1dp" >
+  			<TextView
+                android:id="@+id/tv_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/translate_color"
+                android:textSize="15sp" />
+           
+
+            <CheckBox
+                android:id="@+id/cb_islunar_time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:text="阴历"
+                style="@style/checkBox_Style"
+                 />
+           
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

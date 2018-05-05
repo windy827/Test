@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+     <dimen name="btn_heightL">50dp</dimen>
+    <dimen name="btn_heightH">60dp</dimen>
+     <dimen name="dialog_padding">30dp</dimen>
+    <dimen name="allCheckBoxSize">35dp</dimen>
+    <dimen name="singleCheckBoxSize">30dp</dimen>
+    <!-- 我的设置 -->
+         <!-- PopBookView  -->
+         <dimen name="bookViewTextSize">20sp</dimen>
+     <!-- 闹铃的设置 -->
+          <dimen name="childTextSize">15sp</dimen>
+     <dimen name="bookViewPinyinSize">15sp</dimen>  
+          <dimen name="SetTextSize">25sp</dimen> 
+    <dimen name="TextWordSize">85sp</dimen> 
+    <dimen name="WordSize">80sp</dimen>
+    <dimen name="OtherPinyinSize">20sp</dimen>
+    <dimen name="btnTextSize">20sp</dimen>
+    <dimen name="PinyinSize">30sp</dimen>
+    <dimen name="diverHeight">1dp</dimen>
+    <dimen name="marginTopOrBottom">2dp</dimen>
+    <dimen name="marginLeftOrRight">10dp</dimen>
+    <dimen name="LargeSize_60">60sp</dimen>
+    
+    <dimen name="ChooseCityOrPro_size_20">20sp</dimen>
+    <dimen name="Switch_marginTop">10dip</dimen>
+    <color name="setColor">#ff666666</color>
+<color name="clickCheckColor">#ff00aadd</color>
+
+
+</resources>
+ 

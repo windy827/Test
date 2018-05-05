@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/group_alart_ll_commemoration_aheadtime"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:id="@+id/tv_activity_searchdevices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/textColor"
+                    android:text="@string/aheaddays" />
+
+                <Button
+                    android:id="@+id/group_alartclock_aheaddays"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group_alart_ll_commemoration_remindtime"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_item_terminal_child_devicename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/textColor"
+                    android:text="@string/playtime" />
+
+                <Button
+                    android:id="@+id/group_alartclock_playtime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:focusable="false"
+                    android:textColor="@color/textColor"
+                    android:text="@string/playtime1" />
+
+                <Button
+                    android:id="@+id/group_alartclock_playtime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/group_alartclock_playtime1"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:textColor="@color/textColor"
+                    android:focusable="false"
+                    android:text="@string/playtime2" />
+
+                <Button
+                    android:id="@+id/group_alartclock_playtime3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/textColor"
+                    android:layout_toRightOf="@+id/group_alartclock_playtime2"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:focusable="false"
+                    android:text="@string/playtime2" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    
+
+</LinearLayout>

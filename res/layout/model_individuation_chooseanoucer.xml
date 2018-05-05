@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_individuation_group_anoucer"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/setmodel_ll_selector" >
+
+        <TextView
+            android:id="@+id/tv_individuation_group_anoucer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:text="发音人选择" />
+
+        <ImageView
+            android:id="@+id/iv_individuation_group_anoucer_title"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_sound" />
+
+        <ImageView
+            android:id="@+id/iv_individuation_group_anoucer_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/notexpand" />
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/item_individuation_child2" />
+
+</LinearLayout>

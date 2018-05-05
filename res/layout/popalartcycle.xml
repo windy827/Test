@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray33_color"
+        android:layout_weight="1" >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_smaller" 
+         android:background="@color/whiteColor">
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/grayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:text="响铃周期" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+         android:background="@color/whiteColor"
+        android:layout_marginTop="10dip" >
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week1"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周一" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week2"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周二" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week3"
+            style="@style/checkBox_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:text="周三" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+         android:background="@color/whiteColor"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip" >
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week4"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周四" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week5"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周五" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week6"
+            style="@style/checkBox_Style"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:text="周六" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+         android:background="@color/whiteColor"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip" >
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week7"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周日" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week_once"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="响铃一次" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week_everyday"
+            style="@style/checkBox_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            
+            android:text="每天" />
+    </LinearLayout>
+
+  <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_smaller"
+        
+         android:background="@color/whiteColor" >
+<RelativeLayout
+            android:id="@+id/rl_alartcycle_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:background="@drawable/listitem_selector"
+            android:layout_weight="1" >
+              <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                style="@style/grayTextView_Selector"
+                android:textColor="@color/title_bg"
+                android:text="确定" />
+        </RelativeLayout>
+       <include
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        layout="@layout/model_diver_ver_whitebg" />
+<RelativeLayout
+             android:id="@+id/rl_alartcycle_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/listitem_selector"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_activity_aboutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                style="@style/grayTextView"
+                android:textColor="@color/gray66_color"
+                android:text="取消" />
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

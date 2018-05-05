@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip" >
+
+        <ImageView
+            android:id="@+id/iv_activity_soloalbum_add"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/detail" />
+
+        <TextView
+            android:id="@+id/tv_listitem_soloalnum_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_activity_soloalbum_add"
+            android:layout_alignLeft="@+id/tv_listitem_soloalbum_albumname"
+             android:textColor="@color/gray99_color"
+             android:textSize="@dimen/textSize_normal"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_listitem_soloalbum_albumname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_listitem_soloalnum_date"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textSize_normal"
+            android:textColor="@color/gray99_color"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

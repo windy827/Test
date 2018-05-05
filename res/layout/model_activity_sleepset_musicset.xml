@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            style="@style/grayTextView_larger"
+            android:text="@string/sleepalart_musicset" />
+
+        <TextView
+            android:id="@+id/tv_dialog_update_content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rl_height_smaller"
+            android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_below="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_marginLeft="40dp"
+            style="@style/grayTextView"
+            android:layout_marginTop="20dp" 
+            android:gravity="center_vertical"
+            android:text="@string/sleepalart_musictype" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rl_height_smaller"
+            android:layout_alignLeft="@+id/tv_dialog_update_content"
+            android:layout_below="@+id/tv_dialog_update_content"
+            android:layout_marginTop="20dp"
+             style="@style/grayTextView"
+              android:gravity="center_vertical"
+            android:text="@string/sleepalart_solo" />
+
+        <Button
+            android:id="@+id/bt_model_activity_sleepset_second"
+            android:layout_width="200dip"
+            android:layout_height="@dimen/bt_small_height"
+            android:layout_above="@+id/textView3"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_dialog_update_content"
+            android:background="@drawable/bt_shaixuan"
+            android:paddingRight="20dip"
+            android:textColor="@color/gray99_color"
+            android:text="睡前音乐" />
+
+        <Button
+            android:id="@+id/bt_model_activity_sleepset_third"
+            android:layout_width="200dip"
+            android:layout_height="@dimen/bt_small_height"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/bt_model_activity_sleepset_second"
+            android:background="@drawable/bt_shaixuan"
+            android:paddingRight="20dip"
+             android:textColor="@color/gray99_color"
+            android:text="@string/sleepalart_musicset" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rl_height_smaller"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/bt_model_activity_sleepset_third"
+            android:layout_marginTop="20dp"
+             style="@style/grayTextView"
+              android:gravity="center_vertical"
+            android:text="@string/sleepalart_music_duration" />
+
+        <Button
+            android:id="@+id/bt_model_activity_sleepset_duration"
+            android:layout_width="200dip"
+            android:layout_height="@dimen/bt_small_height"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignLeft="@+id/bt_model_activity_sleepset_second"
+             android:background="@drawable/bt_shaixuan"
+             android:paddingRight="20dip"
+              android:textColor="@color/gray99_color"
+            android:text="15分钟" />
+
+        <TextView
+            android:id="@+id/tv_listitem_answerhelp_title_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_below="@+id/include_diver"
+            android:layout_marginTop="10dp"
+             style="@style/grayTextView_larger"
+             android:textColor="@color/greenColor"
+            android:text="温馨提示" />
+         <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_below="@+id/tv_listitem_answerhelp_title_help"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dip"
+             style="@style/grayTextView"
+            android:text="@string/sleepalart_music_tell1" />
+          
+
+        <include
+            android:id="@+id/include_diver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          
+          android:layout_below="@+id/bt_model_activity_sleepset_duration"
+           android:layout_marginTop="10dip"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <TextView
+            android:id="@+id/tv_gridview_activity_deviceselect"
+            style="@style/grayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:textColor="@color/redColor"
+            android:text="@string/sleepalart_music_saycontents" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/grayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv_gridview_activity_deviceselect"
+            android:layout_below="@+id/tv_gridview_activity_deviceselect"
+             android:layout_alignLeft="@+id/textView6"
+            android:text="@string/sleepalart_music_tell2" />
+
+    </RelativeLayout>
+
+</LinearLayout>

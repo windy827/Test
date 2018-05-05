@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+   
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+      <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/model_activity_undisturbed" /> 
+<RelativeLayout
+        android:id="@+id/rl_activity_wakeset_highset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginBottom="10dip"
+        android:visibility="gone"
+        android:background="@drawable/white_round_selector" >
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_nickname1"
+            style="@style/grayTextView_larger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             android:textColor="@color/gray99_color"
+                android:textSize="@dimen/textSize_large"
+            android:text="@string/awakeset_awake_highset" />
+
+        <ImageView
+            android:id="@+id/iv_activity_wakeset_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/ImgDescript"
+            android:background="@drawable/notexpand" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_acticity_wakeset_highsetcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:orientation="vertical" >
+<RelativeLayout
+            android:id="@+id/rl_activity_awakeset_remind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rl_height_small" 
+           >
+
+            <TextView
+                android:id="@+id/tv_undisturbed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                style="@style/grayTextView_larger"
+                android:text="@string/nightControld_switch" />
+
+            <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_activity_awakeset_undisturbedmodel"
+                style="@style/switchStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                 />
+        </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="180dip"
+              
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="5dp"
+              android:orientation="vertical"
+              android:paddingLeft="5dp" >
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                   android:paddingLeft="15dp"
+                   android:layout_margin="5dip"
+                  android:layout_weight="1" >
+
+                  <TextView
+                      android:id="@+id/tv_acticity_wakeset_begin"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:layout_centerVertical="true"
+                       style="@style/grayTextView"
+                      android:text="@string/undisturbed_startTime"
+                       />
+
+                  <Button
+                      android:id="@+id/bt_starttime_set1_model2"
+                      android:layout_width="@dimen/bt_large_width"
+                      android:layout_height="@dimen/bt_small_height"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@+id/tv_acticity_wakeset_begin"
+                      android:background="@drawable/bt_shaixuan"
+                      
+                      android:text="07:00"
+                      android:textSize="@dimen/textSize_normal"
+                       />
+              </RelativeLayout>
+
+              <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                   android:paddingLeft="15dp"
+                   android:layout_margin="5dip"
+                  android:layout_weight="1" >
+
+                  <TextView
+                      android:id="@+id/tv_activity_wakeset_end"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:layout_centerVertical="true"
+                       style="@style/grayTextView"
+                      android:text="@string/undisturbed_endTime"
+                       />
+
+                  <Button
+                      android:id="@+id/bt_endtime_set1_model2"
+                    android:layout_width="@dimen/bt_large_width"
+                      android:layout_height="@dimen/bt_small_height"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@+id/tv_activity_wakeset_end"
+                      android:background="@drawable/bt_shaixuan"
+                      android:text="23:00"
+                       android:textSize="@dimen/textSize_normal"
+                     />
+              </RelativeLayout>
+		<RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                   android:paddingLeft="15dp"
+                   android:layout_margin="5dip"
+                  android:layout_weight="1" >
+
+                  <TextView
+                      android:id="@+id/tv_activity_undisturbedcontrol_vol"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentLeft="true"
+                      android:layout_centerVertical="true"
+                       style="@style/grayTextView"
+                      android:text="@string/undisturbed_vol"
+                       />
+
+                  <Button
+                      android:id="@+id/bt_activity_undisturbedcontrol_vol"
+                    android:layout_width="@dimen/bt_large_width"
+                      android:layout_height="@dimen/bt_small_height"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@+id/tv_activity_undisturbedcontrol_vol"
+                      android:background="@drawable/bt_shaixuan"
+                      android:text="23:00"
+                       android:textSize="@dimen/textSize_normal"
+                     />
+              </RelativeLayout>
+          </LinearLayout>
+
+ <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:paddingBottom="5dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip">
+
+                <TextView
+                    android:id="@+id/tv_listitem_activity_webmusicfirst_name"
+                    style="@style/grayTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/greenColor"
+                    
+                    android:text="温馨提示:" />
+				<TextView
+                    android:id="@+id/tv_alarm"
+                    style="@style/grayTextView"
+                    android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_below="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:paddingLeft="10dip"
+                    android:layout_marginTop="5dp"
+                    android:text="夜间模式开启后以上时间段还会：" />
+                <TextView
+                    android:id="@+id/tv_alarm1"
+                    style="@style/grayTextView"
+                    android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_below="@+id/tv_alarm"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/undisturbedcontrol_alarm1" />
+                <TextView
+                    android:id="@+id/tv_alarm2"
+                    style="@style/grayTextView"
+                    android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_below="@+id/tv_alarm1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/undisturbedcontrol_alarm2" />
+                <TextView
+                   
+                    style="@style/grayTextView"
+                    android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_below="@+id/tv_alarm2"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/undisturbedcontrol_alarm3" />
+                
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+ </LinearLayout>
+    </ScrollView>
+     <include
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         layout="@layout/model_save" />
+</LinearLayout>
+   
+ <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/model_progress_waiting" />
+</RelativeLayout>

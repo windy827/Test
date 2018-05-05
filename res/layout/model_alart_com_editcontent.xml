@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/alart_edit_MarginLeft"
+     android:paddingRight="@dimen/alart_edit_MarginRight"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alart_edit_rlHeight"
+         android:background="@drawable/listitem_selector" >
+
+        <TextView
+            android:id="@+id/tv_alart_daily_incidentlength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:textSize="@dimen/textSize_normal"
+            android:textColor="@color/alart_edit_textcolor"
+            android:text="@string/alart_edit_com_editcontent1" />
+
+        <LinearLayout
+            android:id="@+id/group_alart_ll_commemoration_remindtime"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="@dimen/alart_edit_MarginLeft"
+            android:layout_toRightOf="@+id/tv_alart_daily_incidentlength"
+            >
+
+            <Button
+                android:id="@+id/group_alartclock_playtime1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_shaixuan"
+                android:focusable="false"
+                android:text="@string/playtime1"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/group_alartclock_playtime2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/group_alartclock_playtime1"
+                android:layout_weight="1"
+                android:background="@drawable/bt_shaixuan"
+                android:focusable="false"
+                android:text="@string/playtime2"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/group_alartclock_playtime3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/group_alartclock_playtime2"
+                android:layout_weight="1"
+                android:background="@drawable/bt_shaixuan"
+                android:focusable="false"
+                android:text="@string/playtime3"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+     <RelativeLayout
+         android:id="@+id/rl_alart_com_editcontent2"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/alart_edit_rlHeight" 
+          android:background="@drawable/listitem_selector">
+
+        <TextView
+            android:id="@+id/tv_alart_daily_incidentlength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+             android:textSize="@dimen/textSize_normal"
+            android:textColor="@color/alart_edit_textcolor"
+            android:text="@string/alart_edit_com_editcontent2" />
+
+        <ImageView
+            android:id="@+id/iv_listitem_rings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/detail" />
+
+        <TextView
+            android:id="@+id/tv_alart_com_editcontent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_alart_daily_incidentlength"
+            android:layout_marginLeft="@dimen/alart_edit_MarginLeft"
+            android:layout_toRightOf="@+id/tv_alart_daily_incidentlength"
+            android:text="1天" />
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+    
+     <RelativeLayout
+         android:id="@+id/rl_alart_com_editcontent3"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/alart_edit_rlHeight" 
+          android:background="@drawable/listitem_selector">
+
+        <TextView
+            android:id="@+id/tv_alart_daily_incidentlength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+             android:textSize="@dimen/textSize_normal"
+            android:textColor="@color/alart_edit_textcolor"
+            android:text="@string/alart_edit_editcontent_ring" />
+
+        <ImageView
+            android:id="@+id/iv_listitem_rings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/detail" />
+
+        <TextView
+            android:id="@+id/tv_alart_com_editcontent3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_alart_daily_incidentlength"
+            android:layout_marginLeft="@dimen/alart_edit_MarginLeft"
+            android:layout_toRightOf="@+id/tv_alart_daily_incidentlength"
+            android:text="晨曦" />
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <RelativeLayout
+         android:id="@+id/rl_alart_com_editcontent4"
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:background="@drawable/listitem_selector" >
+        
+         <EditText
+            android:id="@+id/et_alart_com_editcontent4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+           
+            android:layout_alignParentTop="true"
+           
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/tv_alart_daily_incidentlength"
+           android:background="@drawable/edittext_bg"
+           android:hint="@string/alart_edit_edittext_describe_hinit"
+             android:gravity="top|left"
+             android:textSize="@dimen/alart_edit_textsize_min"
+            android:ems="10" >
+
+        </EditText>
+
+         <TextView
+             android:id="@+id/tv_alart_daily_incidentlength"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/et_alart_com_editcontent4"
+             android:layout_alignBottom="@+id/et_alart_com_editcontent4"
+             android:layout_alignParentLeft="true"
+             android:layout_marginLeft="14dp"
+             android:text="@string/alart_edit_editcontent_remark"
+             android:textColor="@color/alart_edit_textcolor"
+             android:textSize="@dimen/textSize_normal" />
+
+         <TextView
+             android:id="@+id/tv_describewatch_alart_com_editcontent4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/et_alart_com_editcontent4"
+             android:layout_below="@+id/et_alart_com_editcontent4"
+             android:textColor="@color/alart_edit_textcolor"
+              android:textSize="@dimen/textSize_normal"
+             android:text="0/50" />
+
+         <Button
+             android:id="@+id/bt_alart_com_editcontent4_listen"
+             android:layout_width="@dimen/alart_edit_bt_labelWidth"
+             android:layout_height="@dimen/alart_edit_bt_labelHeight"
+             android:layout_alignBaseline="@+id/tv_describewatch_alart_com_editcontent4"
+             android:layout_alignBottom="@+id/tv_describewatch_alart_com_editcontent4"
+             android:layout_alignLeft="@+id/et_alart_com_editcontent4"
+             android:layout_marginLeft="15dp"
+             android:background="@drawable/blue_round_selector"
+             android:textColor="@color/textColor"
+             android:text="@string/alart_edit_editcontent_ringlisten" />
+
+    
+
+    </RelativeLayout>
+    
+    
+     
+
+   
+    
+</LinearLayout>

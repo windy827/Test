@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- menuSet 的RelativeLayout的模板 -->
+   <style name="menuSetRLStyle" >
+        <item name="android:background">@drawable/setting_item</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp </item>
+    </style>  
+    
+   
+    <!-- menuSet 的TextView的模板 -->
+   <style name="menuSetTextView" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/SetTextSize </item>
+        <item name="android:textColor">@color/whiteColor</item> 
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        
+    </style>  
+</resources>

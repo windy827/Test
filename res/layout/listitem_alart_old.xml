@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/littleGray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alart_rlHeight" >
+
+        <TextView
+            android:id="@+id/tv_listitem_alart_topleft_day"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+             android:textColor="@color/textColor"
+             android:gravity="center"
+             android:textSize="@dimen/alart_textsize_min_normal"
+            android:text="今天" />
+
+        <TextView
+            android:id="@+id/tv_listitem_alart_bottomleft_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_listitem_alart_topleft_day"
+            android:visibility="gone"
+             android:layout_marginLeft="10dp"
+            android:text="19:00" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_listitem_alart_topleft_day"
+            layout="@layout/model_diver_ver_whitebg" />
+
+        <TextView
+            android:id="@+id/tv_listitem_alart_top_incident"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_listitem_alart_bottomleft_time"
+            android:layout_alignBottom="@+id/tv_listitem_alart_bottomleft_time"
+           android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_listitem_alart_topleft_day"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/alart_textsize_min_normal"
+            android:text="5小时后响铃" />
+
+        <ImageView
+            android:id="@+id/iv_listitem_alart_expand"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/notexpand" />
+
+        <TextView
+            android:id="@+id/tv_listitem_alart_bottom_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_listitem_alart_expand"
+            android:layout_toRightOf="@+id/tv_listitem_alart_top_incident"
+            android:text="吃饭闹钟"
+            android:textColor="@color/gray99_color"
+            android:textSize="@dimen/alart_textsize_min_normal" />
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <LinearLayout
+        android:id="@+id/ll_listitem_alart_menuvisiable"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+         >
+
+        <RelativeLayout
+            android:id="@+id/rl_listitem_alart_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_listitem_alart_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:textSize="@dimen/alart_textsize_min"
+                android:textColor="@color/textColor"
+                android:text="@string/alart_edit" />
+
+            <ImageView
+                android:id="@+id/iv_listitem_alart_edit"
+                android:layout_width="@dimen/alart_iv_heightAndwidth"
+                android:layout_height="@dimen/alart_iv_heightAndwidth"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/edit_pre" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_listitem_alart_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitem_selector" >
+
+            <ImageView
+                android:id="@+id/iv_listitem_alart_close"
+                android:layout_width="@dimen/alart_iv_heightAndwidth"
+                android:layout_height="@dimen/alart_iv_heightAndwidth"
+                android:layout_centerHorizontal="true"                
+                 android:layout_marginTop="2dip"
+                android:background="@drawable/close_nor" />
+
+            <TextView
+                android:id="@+id/tv_listitem_alart_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_listitem_alart_close"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                 android:textSize="@dimen/alart_textsize_min"
+                android:textColor="@color/textColor"
+                android:text="@string/alart_open" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_listitem_alart_skip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitem_selector" >
+
+            <ImageView
+                android:id="@+id/iv_listitem_alart_skip"
+                android:layout_width="@dimen/alart_iv_heightAndwidth"
+                android:layout_height="@dimen/alart_iv_heightAndwidth"
+                android:layout_centerHorizontal="true"
+                 android:layout_marginTop="2dip"
+                android:background="@drawable/skip_pre" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_listitem_alart_skip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                 android:textSize="@dimen/alart_textsize_min"
+                android:textColor="@color/textColor"
+                android:text="@string/alart_skip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_listitem_alart_del"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitem_selector" >
+
+            <ImageView
+                android:id="@+id/iv_listitem_activity_webmusicfirst_detail"
+                android:layout_width="@dimen/alart_iv_heightAndwidth"
+                android:layout_height="@dimen/alart_iv_heightAndwidth"
+                android:layout_centerHorizontal="true"
+                 android:layout_marginTop="2dip"
+                android:background="@drawable/delete_pre" />
+
+            <TextView
+                android:id="@+id/tv_model_playing_pb_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_listitem_activity_webmusicfirst_detail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                 android:textSize="@dimen/alart_textsize_min"
+                android:textColor="@color/textColor"
+                android:text="@string/alart_del" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

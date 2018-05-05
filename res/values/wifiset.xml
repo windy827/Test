@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="set_textcolor">@color/gray99_color</color>
+
+    <dimen name="wifi_textsize">18sp</dimen>
+
+    <string name="wifi_alart"></string>
+    <string name="wifi_set_remind">通过该设置,可将设备终端连接到无线网络,请注意以下信息:</string>
+
+    <color name="wifi_set_textcolor_remind">@color/textColor</color>
+
+    <string name="wifi_set_remind1">配置无线网络时,本程序会将声音自动打开,采用声波方式传递信息,过程约15秒钟;</string>
+
+    <color name="wifi_set_textcolor_remind1234">@color/whiteColor</color>
+
+    <string name="wifi_set_remind2">将手机靠近设备终端20cm~30cm处;</string>
+    <string name="wifi_set_remind3">同时配置多部设备时,请将手机置于多部设备设备的中心位置;</string>
+    <string name="wifi_set_remind4">快速双击设备开关按钮,然后在10秒内点击下面的发送按钮;</string>
+    <string name="wifi_set_remind_sending">配置中</string>
+    <string name="wifi_set_remind_send_waitmsg">正在和设备亲密交谈,请耐心等待,配置完成后将自动跳转到搜索设备界面</string>
+
+    <dimen name="wifi_textsize_remind1234">15sp</dimen>
+
+    <string name="wifi_set_read"></string>
+<string name="wifiset_connectfailed">可能造成失败的原因：\n\n\t\t\t\t1.您输入的网络密码可能有误；\n
+    \t\t\t\t2当前的网络信号不好；\n\n请检查后,重新发送声波进行配置！</string>
+    <color name="wifi_set_textcolor_read">@color/textColor</color>
+<string name="wifi_set_notrecive">听到\"接收失败\"? \n未听到任何提示?</string>
+    <string name="wifi_set_next">下一步</string>
+    <string name="wifi_set_send">发送</string>
+    <string name="wifi_set_resend">重新发送</string>
+    <string name="wifi_set_nokey_send1">1.请将手机距离产品10厘米左右;  \n\n2.保持周围环境安静;   \n\n3.点击发送按钮！</string>
+    <string name="wifi_set_send_result_alart_connected">听到联网成功</string>
+    <string name="wifi_set_send_result_alart_volalarm">听到音量调节提示</string>
+    <string name="wifi_set_send_result_connected">联网成功</string>
+    <string name="wifi_set_send_result_alart_faild">听到失败提示</string>
+    <string name="wifi_set_send_result_setfaild">配置失败</string>
+    <string name="wifi_faildalarm">\t\t\t请根据智能设备的提示调整音量！</string>
+    <string name="wifi_noremindalarm">1. 请确保智能设备已开机; \n\n2. 请确保手机扬声器未被遮挡; \n\n3. 请保持周围环境相对安静; \n\n4. 请将手机扬声器与智能设备的距离调整到10至20厘米之间; \n\n若上述步骤您都已做到，请尝试调整手机音量</string>
+ 	<string name="wifi_premission_alarm">"检测到获取设备信息权限已关闭，只有开启了该权限才能正常使用本软件：
+ 	    \t\t例如您可以尝试如下步骤:360卫士->软件管理->权限管理-->百灵智能,然后选择信任软件或者允许获取位置信息后刷新本界面即可以正常使用了；
+ 	    \t\t如果手机上没有安装第三方软件您可以尝试进入系统设置里，然后进入百灵智能的权限管理，选择信任软件或允许本软件的获取位置信息权限""</string>
+    <style name="wifiset_textremind">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/wifi_textsize_remind1234</item>
+        <item name="android:textColor">@color/gray99_color</item>
+    </style>
+
+    <style name="wifiset_imageViewremind">
+        <item name="android:layout_width">10dip</item>
+        <item name="android:layout_height">10dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:background">@drawable/listinfo_bg</item>
+    </style>
+
+</resources>

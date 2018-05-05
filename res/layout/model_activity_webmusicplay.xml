@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_activity_webmusic_play"
+            style="@style/CommenListViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:layout_weight="1"
+            android:scrollbars="none" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <RelativeLayout
+            android:id="@+id/rl_nocontent_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_nocontent_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:text="抱歉，未获取到任何歌曲列表内容,您可以尝试刷新试试~"
+                android:textColor="@color/gray66_color"
+                android:textSize="@dimen/textSize_bigger" />
+
+            <Button
+                android:id="@+id/bt_nocontent_play"
+                style="@style/whiteButton"
+                android:layout_width="@dimen/bt_large_width"
+                android:layout_height="@dimen/bt_small_height"
+                android:layout_below="@+id/tv_nocontent_play"
+                android:text="刷 新" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

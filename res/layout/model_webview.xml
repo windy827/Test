@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <WebView
+        android:id="@+id/wv_model_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:visibility="invisible"
+        android:layout_weight="1" />
+ <RelativeLayout
+     android:id="@+id/rl_model_webview"
+     android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	     android:layout_centerInParent="true"
+	     
+	     android:visibility="visible" >
+    <RelativeLayout
+     
+     android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_centerInParent="true"
+	      >
+		<TextView
+		    android:id="@+id/tv_nocontent_first"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   
+		    android:text="抱歉，未获取到任何歌曲列表内容,您可以尝试刷新试试~" 
+		    android:padding="10dip"
+		    
+		    android:textColor="@color/gray66_color"
+		    android:textSize="@dimen/textSize_bigger"/>
+
+		<Button
+		    android:id="@+id/bt_model_webview"
+		    android:layout_width="@dimen/bt_large_width"
+		    android:layout_height="@dimen/bt_small_height"
+		   android:layout_below="@+id/tv_nocontent_first"
+		    style="@style/whiteButton"
+		    
+		    android:text="刷 新" />
+</RelativeLayout>
+</RelativeLayout>
+<include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        layout="@layout/model_progress_waiting" />
+</RelativeLayout>

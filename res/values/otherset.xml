@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="otherset_musicplaytime_alarm">设置的连续播放时长将会在播放新闻、笑话、音乐、故事的时候生效哦~</string>
+	<string name="switch_fulltime">整点报时</string>
+	<string name="switch_halftime">半点报时</string>
+	<string name="otherset_playtime">连续播放时长：</string>
+</resources>

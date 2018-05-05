@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="sleepalart_musicset">睡前音乐设置</string>
+    <string name="sleepalart_musictype">音乐:</string>
+    <string name="sleepalart_solo">专辑:</string>
+    <string name="sleepalart_music_duration">时长:</string>
+   
+    <string name="sleepalart_music_tell1">试着对终端说</string>
+	<string name="sleepalart_music_saycontents">\"我要睡觉啦\"</string>
+    <string name="sleepalart_music_tell2">睡前音乐播放完毕后会自动关灯哦~</string>
+</resources>

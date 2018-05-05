@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/rl_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="30dip" >
+
+            <TextView
+                android:id="@+id/tv_listitem_activity_webmusicfirst_name"
+                style="@style/blackTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:text="温馨提示:"
+                android:textColor="@color/greenColor" />
+
+            <TextView
+                android:id="@+id/tv_alarm"
+                style="@style/grayTextView"
+                android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                android:layout_below="@+id/tv_listitem_activity_webmusicfirst_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/wifi_faildalarm" />
+        </RelativeLayout>
+
+      
+
+ 
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        layout="@layout/volseekbar" />
+
+    <Button
+        android:id="@+id/bt_activity_failedalarm_next"
+        style="@style/buttonOfBottom"
+        android:text="@string/wifi_set_next" />
+
+</LinearLayout>

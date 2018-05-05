@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small"
+        android:layout_marginTop="5dip" >
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_nickname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+             style="@style/grayTextView_larger"
+            android:text="@string/awakeset_awake_switch" />
+
+        <com.tts168.autoset.view.WiperSwitch
+            android:id="@+id/switch_activity_undisturbed_prompt"
+            style="@style/switchStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+<RelativeLayout
+            android:id="@+id/rl_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           
+            android:paddingBottom="5dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip" >
+
+            <TextView
+                android:id="@+id/tv_listitem_activity_webmusicfirst_name"
+                style="@style/grayTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+               
+                android:text="温馨提示："
+                android:textColor="@color/greenColor" />
+
+            <TextView
+                android:id="@+id/tv_alarm"
+                style="@style/grayTextView"
+                android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                android:layout_below="@+id/tv_listitem_activity_webmusicfirst_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/undisturbed_prompt_ingo" />
+
+            
+
+        </RelativeLayout>
+ <RelativeLayout
+      android:id="@+id/rl_undistubed_a_o"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small"
+        android:layout_marginTop="1dip" >
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_nickname1_a_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+             style="@style/grayTextView_large"
+            android:text="@string/undistribute_refusecongnize_switch" />
+
+        <com.tts168.autoset.view.WiperSwitch
+            android:id="@+id/switch_activity_undisturbed_prompt_a_o"
+            style="@style/switchStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+<RelativeLayout
+            android:id="@+id/rl_undistubed_alarm_a_o"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+           
+            android:paddingBottom="5dip"
+            android:paddingLeft="40dip"
+            android:paddingRight="30dip" >
+
+            <TextView
+                android:id="@+id/tv_listitem_activity_webmusicfirst_name_a_o"
+                style="@style/grayTextView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+               
+                android:text="温馨提示："
+                android:textColor="@color/greenColor" />
+
+            <TextView
+                android:id="@+id/tv_alarm"
+                style="@style/grayTextView"
+                android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name_a_o"
+                android:layout_below="@+id/tv_listitem_activity_webmusicfirst_name_a_o"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/undisturbed_a_o_prompt_ingo" />
+
+            
+
+        </RelativeLayout>
+<include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/model_diver_hor_whitebg" />
+
+</LinearLayout>

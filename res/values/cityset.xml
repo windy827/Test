@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="cityset_alarm1">1.本地城市的天气信息默认会在起床闹铃中播放哦！</string>
+    <string name="cityset_tell1">2.试着对终端说</string>
+	<string name="cityset_saycontents">\"今天天气\"</string>
+    <string name="cityset_tell2">您就能知道本地城市最新的天气情况了哦~</string>
+</resources>

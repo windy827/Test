@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+     <string name="ImgDescript">控件ImageView</string>
+ <!-- ExpanableListView 模板 -->
+   <style name="expandlistViewStyle" >
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:layout_marginTop">2dp</item> 
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fadingEdge">@null</item>
+         <item name="android:listSelector">@drawable/listitem_selector</item>
+        <item name="android:divider">@color/gray33_color</item>
+        <item name="android:childDivider">@null</item>
+        <item name="android:childIndicator">@null</item>
+        <item name="android:groupIndicator">@null</item>
+    </style>  
+ <!-- ListView 模板 -->
+    <style name="CommenListViewStyle" >
+         <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">0dp</item>  
+        <item name="android:listSelector">@drawable/listitem_selector</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:divider">@color/gray33_color</item>
+      <item name="android:dividerHeight">1px</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <!-- GridView 模板 -->
+    <style name="GridViewStyle" >
+        
+        
+        <item name="android:listSelector">@drawable/listitem_selector</item>
+      
+         <item name="android:smoothScrollbar">true</item>
+          <item name="android:soundEffectsEnabled">true</item>
+           <item name="android:stretchMode">columnWidth</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    
+     
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+        <!-- RadioButton 模板 -->
+    <style name="radiobutton_Style" >
+    <item name="android:drawableLeft">@drawable/radiobutton</item> 
+     <item name="android:button">@null</item>  
+          <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:padding">2dip</item>
+        <item name="android:textSize">@dimen/textSize_bigger </item>
+        <item name="android:textColor">@color/radio_selector</item> 
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">40dp</item> 
+    </style>
+     <!-- CheckBox 模板 -->
+        <style name="checkBox_Style" >
+    <item name="android:drawableLeft">@drawable/checkbox_style</item>  
+     <item name="android:button">@null</item>  
+          <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">16sp </item>
+     <item name="android:paddingLeft">2dp</item>
+        <item name="android:textColor">@color/radio_selector</item> 
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

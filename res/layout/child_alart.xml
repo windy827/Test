@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_alartall_child_alart"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/listitem_selector" >
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     
+     android:layout_centerHorizontal="true"
+     android:layout_toLeftOf="@+id/split2"
+     android:layout_toRightOf="@+id/split1"
+     android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_item_terminal_child_devicename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/childTextSize"
+                android:textColor="@color/gray99_color"
+                android:text="@string/alartincident" />
+
+            <TextView
+                android:id="@+id/child_alart_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_item_terminal_child_devicename"
+                android:text="TextView"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/childTextSize" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_describe_child_alart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_activity_searchdevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/childTextSize"
+                android:textColor="@color/gray99_color"
+                android:text="@string/alartdescribe" />
+
+            <TextView
+                android:id="@+id/tv_describe_child_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_activity_searchdevices"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="TextView"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/childTextSize" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dailyalart_child_alart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_listitem_alart_top_incident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/childTextSize"
+                android:textColor="@color/gray99_color"
+                android:text="@string/cycle" />
+
+            <TextView
+                android:id="@+id/tv_cycle_child_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_listitem_alart_top_incident"
+                 android:textColor="@color/textColor"
+                android:textSize="@dimen/childTextSize"
+                android:text="TextView" />
+
+            <CheckBox
+                android:id="@+id/cb_remind_child_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_below="@+id/tv_listitem_alart_top_incident"
+               android:textColor="@color/textColor"
+               android:textSize="@dimen/childTextSize"
+                android:text="@string/reremind5minutes" />
+
+        </RelativeLayout>
+
+</LinearLayout>
+        <TextView
+            android:id="@+id/child_alart_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="TextView"
+            android:textSize="@dimen/childTextSize" />
+<ImageView
+            android:id="@+id/split1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+           
+            android:layout_toRightOf="@+id/child_alart_time"
+            android:background="@drawable/vertical_shadow_line" />
+
+        <ImageView
+            android:id="@+id/split2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/child_alart_switch"
+            android:background="@drawable/vertical_shadow_line" />
+
+        <ImageView
+            android:id="@+id/child_alart_switch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/snap_close_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

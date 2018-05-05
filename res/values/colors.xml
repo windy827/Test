@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line">#ff87ceeb</color>
+   
+    <color name="divider_color">#11000000</color>
+    <color name="msg_color">#FF000000</color>
+    <color name="dialog_bg">#ff00bcd4</color>
+     <color name="dialog_bg_click">#ff00ddd4</color>
+
+    <color name="btn_press_color">#FF1111ee</color>
+    <color name="btn_unpress_color">#FF1196ee</color>
+    <color name="setting_touch_blue_color">#ff61b0e5</color>
+     <color name="listView_diver">#DADBDA</color>
+    <!-- PopBookView -->
+      <color name="bookView_singletext_color">#FF444444</color>
+    <color name="littlegray_color">#FFeeeeee</color>
+  <color name="setnor_color">#77ffffff</color> 
+ <color name="translate_color">#00ffffff</color>      
+<color name="setclick_color">#99ffffff</color>  
+<color name="gray11_color">#11000000</color>  
+<color name="gray33_color">#33000000</color>  
+<color name="gray66_color">#66000000</color>  
+<color name="gray99_color">#99000000</color>  
+<color name="bluecc">#99ccff</color>  
+<color name="blue">#00ccff</color> 
+
+
+<!--  常用内容-->
+ <color name="whiteColor">#ffffffff</color>
+  <color name="blackColor">#ff000000</color>
+ <color name="whiteColor88">#bbffffff</color>
+ <color name="littlewhiteColor">#08000000</color>
+ <color name="translate_color">#00ffffff</color> <!-- 透明色 -->
+<color name="bgColor">#ffffffff</color><!-- 标题栏背景色 -->
+<color name="redColor">#ffff0000</color> 
+<color name="redColor88">#ffee0033</color>
+<color name="greenColor">#ff99cc33</color> 
+<color name="littergreenColor">#aa33dd33</color> 
+ <color name="textColor">@color/gray99_color</color><!-- 黑色字体 -->
+ <color name="litter_blue">#99ccff</color>
+ <color name="littleGray">#11000000</color><!-- 透明灰色 -->
+</resources>

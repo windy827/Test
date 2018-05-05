@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  
+  
+     
+       
+        <string name="answerhelper_question">识别结果:</string>
+        <string name="answerhelper_reply">回复内容:</string>
+        <string name="answerhelper_help">问答帮助:</string>
+ 		<string name="answerhelper_recordalart">  您跟终端的问答能在此同步显示哦!</string>
+</resources>

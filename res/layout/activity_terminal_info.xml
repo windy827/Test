@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="60dip"
+     android:background="@color/littleGray" >
+
+                <EditText
+                    android:id="@+id/et_activity_terminal_info_devicename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toLeftOf="@+id/bt_activity_terminal_info_edit"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/terminal_Device_info_tv_textsize"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/bt_activity_terminal_info_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/blue_round_selector"
+                    android:text="@string/terminal_Device_edit"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/bt_terminal_addgroup_textSize"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_devicename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/et_activity_terminal_info_devicename"
+                    android:layout_centerVertical="true"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/terminal_Device_info_tv_textsize" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/model_diver_hor_whitebg" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    style="@style/TerminalLeftTextViewStyle"
+                    android:text="@string/terminal_Device_IP" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_ip"
+                    style="@style/TerminalRightTextViewStyle"
+                    android:layout_alignBaseline="@+id/textView21"
+                    android:text="TextView" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    style="@style/TerminalLeftTextViewStyle"
+                    android:text="@string/terminal_Device_mac" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_mac"
+                    style="@style/TerminalRightTextViewStyle"
+                    android:layout_alignBaseline="@+id/textView31"
+                    android:text="TextView" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/textView41"
+                    style="@style/TerminalLeftTextViewStyle"
+                    android:text="@string/terminal_Device_DWversion" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_version"
+                    style="@style/TerminalRightTextViewStyle"
+                    android:layout_alignBaseline="@+id/textView41"
+                    android:text="V0.9.1" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/textViewsw"
+                    style="@style/TerminalLeftTextViewStyle"
+                    android:text="@string/terminal_Device_SWversion" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_sw_version"
+                    style="@style/TerminalRightTextViewStyle"
+                    android:layout_alignBaseline="@+id/textViewsw"
+                    android:text="V0.9.1" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+ <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/textView511"
+                    style="@style/TerminalLeftTextViewStyle"
+                    android:text="@string/terminal_setfile_ID" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_config"
+                    style="@style/TerminalRightTextViewStyle"
+                    android:layout_alignBaseline="@+id/textView511"
+                    android:text="020304" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/textView51"
+                    style="@style/TerminalLeftTextViewStyle"
+                    android:text="@string/terminal_Device_ID" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_id"
+                    style="@style/TerminalRightTextViewStyle"
+                    android:layout_alignBaseline="@+id/textView51"
+                    android:text="ID5945" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/textView61"
+                    style="@style/TerminalLeftTextViewStyle"
+                    android:text="@string/terminal_ServerSate" />
+
+                <TextView
+                    android:id="@+id/tv_activity_terminal_info_serverstate"
+                    style="@style/TerminalRightTextViewStyle"
+                    android:layout_alignBaseline="@+id/textView61"
+                    android:text="正常" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/model_diver_hor_whitebg" />
+        </LinearLayout>
+    </ScrollView>
+
+ 
+
+</LinearLayout>

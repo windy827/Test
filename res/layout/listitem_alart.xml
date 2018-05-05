@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dip" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/alart_rlHeight"
+            android:layout_height="match_parent" >
+
+            <com.tts168.autoset.view.definedview.RoundAngleImageView
+                android:id="@+id/iv_listitem_alart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+               
+            android:scaleType="fitCenter"
+                android:src="@drawable/awakealart_pre" />
+
+        </RelativeLayout>
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            layout="@layout/model_diver_ver_whitebg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_listitem_timeAndIncident"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                
+
+                <TextView
+                    android:id="@+id/tv_listitem_alart_incident"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="TextView"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/textSize_bigger" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_listitem_cycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_alart_cycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/gray66_color"
+                    android:textSize="@dimen/textSize_normal"
+                    android:text="TextView" />
+                
+                <TextView
+                    android:id="@+id/tv_listitem_alart_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_listitem_alart_cycle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/redColor"
+                    android:textSize="@dimen/textSize_normal"
+                    android:text="TextView" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/alart_rlHeight"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_acticity_awakealart_isopen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/detail" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

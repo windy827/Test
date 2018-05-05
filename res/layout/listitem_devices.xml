@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" 
+        android:background="@color/gray66_color"
+        >
+        
+        <ImageView
+            android:id="@+id/iv_device_img_listitem_devices"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/device" />
+
+        <TextView
+            android:id="@+id/tv_deviceName_listitem_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+           android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/whiteColor"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/bt_changedevice_listitem_devices"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+           android:textColor="@color/whiteColor"
+            android:text="@string/changeDevice" />
+
+    </RelativeLayout>
+
+</LinearLayout>

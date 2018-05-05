@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">百灵7618</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+     <string name="model_bottom_content">云宝-智能语音硬件解决方案</string>
+ <string name="swipe">Swipe from left to right</string>
+    <string name="menu_settings">Settings</string>
+    <string name="searchDevices_alaret">设备搜索中...</string>
+    <string name="logo">用户登录</string>
+    <string name="submit">提交</string>
+    <string name="iv_warn">ImageView警告</string>
+        <string name="ssid">SSID:</string>
+        <string name="editssid">     </string>
+    <string name="Password">密 码:</string>
+ <string name="gotoSet">进入功能配置</string>
+    <string name="wifisend">WIFI音频配置</string>
+    
+    <string name="tb_test_off">不发送笑话键和日期</string>
+     <string name="tb_test_on">发送笑话键和日期</string>
+    <string name="setsend">功能音频配置</string>
+    <string name="send">发   送</string>
+     <string name="set">设   置</string>
+      <!-- 发音人选择 --> 
+      <string name="anouncerset">发音设置</string>
+      <string name="anouncer">发音人选择:</string>
+       <string name="set_enunciator"></string>
+		<string-array name="enunciators">
+          <item >晓玲</item>
+          <item >尹小坚</item>
+          <item >易小强</item>
+          <item >田蓓蓓</item>
+          <item >唐老鸭</item>
+          <item >小燕子</item>
+      	</string-array>
+      	
+		<string-array name="playtime">
+
+          <item >8秒</item>
+          <item >16秒</item>
+          <item >24秒</item> 
+          <item >32秒</item>
+          
+      	</string-array>
+      	
+		
+		
+		<string-array name="sleepmusicplaytime">
+		  <item >1分钟</item>
+		  <item >10分钟</item>
+          <item >15分钟</item>
+          <item >20分钟</item>
+          <item >25分钟</item>
+          <item >30分钟</item> 
+          <item >40分钟</item> 
+          <item >50分钟</item>
+          <item >60分钟</item>
+          
+      	</string-array>
+      	
+		
+   <!-- 时间日期 --> 
+     <string name="dateAndtime">时间日期</string>
+     <string name="timeset">设置时间</string>
+     <string name="dateset">设置日期</string>
+        <!-- 播报设置 --> 
+      <string name="readset">播报设置</string>
+     <string name="fullread">整点播报</string>
+     <string name="halfread">半点播报</string>
+      <string name="startTime">开始时间:</string>
+       <string name="endTime">结束时间:</string>
+      
+         <!-- 节日祝福播报设置 --> 
+      <string name="festiveset">节日节气祝福播报</string>
+     <string name="festive">节日和祝福播报</string>
+     <string name="jieqi">二十四节气播报</string>
+
+       
+       <!-- 城市设置 --> 
+       <string name="weatherset">天气键</string>
+     <string name="shortpress">单击</string>
+     <string name="doubleclick">双击</string>
+      <string name="longpress">长按</string>
+      <string name="laugh">笑话键</string>
+        <string name="news">新闻键</string>
+      
+          <string name="sleepset">进入睡眠时长</string>
+            <string name="getinfoset">获取信息时间</string>
+        
+    <string name="settingContent">配置内容:</string>
+    
+     
+     <string name="savealart">保存闹钟</string>
+     <string name="alartincident">事  件:</string>
+      <string name="hint_incident">不超过10个字</string>
+     <string name="alartdescribe">描述:</string>
+      <string name="hint_describe">不超过40个字</string>
+    
+     <string name="gettime1">0:00</string>
+      <string name="gettime2">2:00</string>
+       <string name="gettime3">4:00</string>
+        <string name="gettime4">6:00</string>
+      <string name="gettime5">8:00</string>
+       <string name="gettime6">10:00</string>
+        <string name="gettime7">12:00</string>
+      <string name="gettime8">14:00</string>
+       <string name="gettime9">16:00</string>
+       <string name="gettime10">18:00</string>
+      <string name="gettime11">20:00</string>
+       <string name="gettime12">22:00</string>
+       
+       
+       
+       <string name="edit">编   辑</string>
+       
+       <string name="aheaddays">提前天数:</string>
+       
+       <string name="playtime">提醒时间:</string>
+       <string name="playtime1">06:00</string>
+       <string name="playtime2">12:00</string>
+       <string name="playtime3">18:00</string>
+       
+       <string name="cycle">周期:</string>
+       <string name="reremind5minutes">五分钟后再提醒</string>
+       
+       <string name="chooseSSID">获取WIFI名</string>
+        <string name="chooseProvice">选择省份</string>
+         <string name="chooseProvice1">北京</string>
+          <string name="chooseProvice2">广东</string>
+           <string name="chooseProvice3">上海</string>
+        <string name="chooseCity">选择城市</string>
+         <string name="chooseCity1">北京</string>
+          <string name="chooseCity2">广州</string>
+           <string name="chooseCity3">上海</string>
+           
+           
+            <string name="chooseLaugh1">学生笑话</string>
+             <string name="chooseLaugh2">老人笑话</string>
+              <string name="chooseLaugh3">幽默笑话</string>
+        <string name="alarmSet">闹铃列表</string>
+         <!-- SideMenu弹出的内容 -->
+         <string name="refreshDevices">刷新</string>
+         <string name="gotoFSK">进入FSK配置</string>
+         <string name="changeDevice">切换</string>
+          <string name="more">更 多</string>
+        <!-- OptionMenu弹出的内容 -->
+         <string name="exit">退  出</string>
+          <string name="inputsetfile">导入配置文件</string>
+          <string name="editgetSID">手动输入SSID</string>
+          
+           <string name="imageview_null" />
+          
+           <string name="suggest_content_hint">请输入您要反馈的内容！</string>
+		     <string name="suggest_userinfo_hint">请在此处输入您的联系方式！</string>
+		     
+		     
+		     <string name="crash_toast_text">百灵智能瓦塔鸟,程序员哥哥正在积极解决~！</string>
+</resources>

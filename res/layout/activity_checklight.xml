@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            style="@style/grayTextView_largest"
+            android:textColor="@color/black"
+            android:text="请查看设备是否" />
+
+        <TextView
+            android:id="@+id/tv_activity_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+             style="@style/grayTextView_largest"
+             android:textColor="@color/greenColor"
+            android:text="WIFI灯亮起"/>
+
+        <TextView
+            android:id="@+id/tv_checklight_noflash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/selector_redtext"
+            android:text="WIFI灯没有亮起?" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_checklight_FSK"
+        style="@style/buttonOfBottom"
+        android:text="开始语音配置" />
+
+</LinearLayout>

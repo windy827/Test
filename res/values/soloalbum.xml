@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="soloalbum_textcolor">@color/textColor</color>
+    <dimen name="soloalbum_rlHeight">60dip</dimen>
+   
+    <dimen name="soloalbum_listitem_rlHeight">50dip</dimen>
+     <dimen name="soloalbum_titleTextSize">20sp</dimen>
+   <string name="soloalbum_title">专辑列表</string>
+
+      
+      
+     <dimen name="soloalbum_MarginLeftOrRight">30dip</dimen>
+</resources>

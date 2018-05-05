@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+  
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_weight="1" >
+  <Button
+        android:id="@+id/bt_activity_connectfailedretry"
+        style="@style/buttonOfBottom"
+        android:layout_alignParentBottom="true"
+        android:text="重新配置" />
+
+   <TextView
+            android:id="@+id/textView1"
+            style="@style/grayTextView_largest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="联网失败"
+            android:textColor="@color/redColor" />
+<TextView
+            android:id="@+id/tv_activity_connectwifi_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            style="@style/grayTextView_large"
+            
+            android:text="@string/wifiset_connectfailed" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="300dip"
+    android:layout_height="200dip"
+    android:layout_below="@+id/tv_activity_connectwifi_remind"
+    android:layout_centerHorizontal="true"
+    
+    android:src="@drawable/failedconnect" />
+
+    </RelativeLayout>
+
+</LinearLayout>

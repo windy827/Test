@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_activity_wifisetremind_guide"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dip"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/ImgDescript"
+            android:src="@null" />
+
+    </RelativeLayout>
+    <Button
+            android:id="@+id/bt_activity_wifiset_remind_send"
+            style="@style/buttonOfBottom"
+            android:layout_gravity="center"
+            android:text="@string/wifi_set_send" />
+</LinearLayout>

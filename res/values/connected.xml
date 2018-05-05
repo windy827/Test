@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+   <string name="connected_instruction"> </string>
+<string name="connected_research">WiFi指示灯常亮</string>
+<string name="connected_bt_researchtext">重新扫描设备</string>
+<string name="connected_wifiset">WiFi指示灯闪烁</string>
+<string name="connected_bt_wifiset">添加设备</string>
+<string name="connected_tv_notconected">请确保您的手机连接的Wifi与设备设置的Wifi一致！</string>
+</resources>

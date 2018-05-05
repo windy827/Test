@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="funcset_textcolor">#99000000</color>
+    <dimen name="funcset_textsize">20sp</dimen>
+   <string name="funcset_alart"> 请输入当前wifi的密码,输入完成后点击下一步!</string>
+</resources>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/tv_alart_cycle_once"
+                    style="@style/blackTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="响铃一次" />
+
+                <Button
+                    android:id="@+id/bt_choosealart_cycle_oncetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    
+                    android:background="@drawable/bt_shaixuan"
+                    android:layout_toRightOf="@+id/tv_listitem_activity_webmusicfirst_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="35dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dip"
+                    android:paddingRight="20dip"
+                    style="@style/grayTextView"
+                    android:text="2015-04-21" />
+
+                <TextView
+                    android:id="@+id/tv_listitem_activity_webmusicfirst_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_alart_cycle_once"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:visibility="gone"
+                    style="@style/grayTextView"
+                    android:text="日期:" />
+             
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/tv_alart_cycle_everyday"
+                    style="@style/blackTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="每天响铃" />
+              
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip" >
+
+                <TextView
+                    android:id="@+id/tv_alart_cycle_week"
+                    style="@style/blackTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="自定义" />
+
+                
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_notify_alart_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+             <RadioButton
+                 android:id="@+id/cb_notify_alart_cycle_fremodel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 style="@style/radiobutton_Style"
+                 
+                 android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/cb_notify_alart_cycle_everyday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                style="@style/radiobutton_Style"
+                
+                android:layout_weight="1" />
+
+           <RadioButton
+               android:id="@+id/cb_notify_alart_cycle_defined"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentTop="true"
+               style="@style/radiobutton_Style"
+              
+               android:layout_weight="1" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" >
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week1"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周一" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week2"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周二" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week3"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周三" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" >
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week4"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周四" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week5"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周五" />
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week6"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周六" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip" >
+
+        <CheckBox
+            android:id="@+id/cb_notify_alart_cycle_week7"
+            style="@style/checkBox_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周日" />
+
+        <CheckBox
+            android:id="@+id/CheckBox02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周二"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_normal"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:id="@+id/CheckBox01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周三"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/textSize_normal"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

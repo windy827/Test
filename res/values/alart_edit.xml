@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alart_edit_textcolor">@color/gray99_color</color>
+    <dimen name="alart_edit_rlHeight">40dip</dimen>
+    <dimen name="alart_editDiscribe_rlHeight">100dip</dimen>
+    <dimen name="alart_edit_bt_labelHeight">30dip</dimen>
+    <dimen name="alart_edit_bt_labelWidth">60dip</dimen>
+ 
+    
+     <dimen name="alart_edit_MarginLeft">10dip</dimen>
+     <dimen name="alart_edit_MarginRight">10dip</dimen>
+      <dimen name="alart_edit_MarginTop">5dip</dimen>
+    <dimen name="alart_edit_textsize">20sp</dimen>
+    <dimen name="alart_edit_textsize_min_normal">@dimen/textSize_normal</dimen>
+    <dimen name="alart_edit_textsize_min">12sp</dimen>
+   
+     <string name="alart_awake">起床闹铃</string>
+   <string name="alart_sleep">睡前音乐</string>
+    <string name="alart_defined">自定义闹铃</string>
+     <string name="alart_remind">备忘提醒</string>
+    <string name="alart_birthday">生日提醒</string>
+    
+    
+    
+    <string name="alart_save">保存闹铃</string>
+    <string name="alart_commentset">通用设置</string>
+    
+     <string name="alart_edit_close">关闭</string>
+      <string name="alart_edit_open">开启</string>
+      <string name="alart_edit_del">删除</string>
+    <string name="alart_awake_title">起床</string>
+    <string name="alart_sleep_title">睡眠</string>
+      
+      
+     <string name="alart_edit_label_hinit">请在此输入标题或直接点击上方标签...</string>
+      <string name="alart_edit_edittext_describe_hinit">请在此处输入云宝提醒时的语音,限50字以内</string>
+     <string name="alart_edit_editcontent_ring">铃声</string>
+   <string name="alart_edit_editcontent_remark">备注</string>
+   <string name="alart_edit_editcontent_ringlisten">试听</string>
+    
+   <string name="alart_edit_daily1">起床</string>
+   <string name="alart_edit_daily2">睡觉</string>
+    <string name="alart_edit_daily3">吃药</string>
+    
+       <string name="alart_edit_com1">生日</string>
+   <string name="alart_edit_com2">纪念日</string>
+    <string name="alart_edit_com3">还款日</string>
+    
+    
+     <string name="alart_edit_daily_editcontent1">周期</string>
+   <string name="alart_edit_daily_editcontent2">小睡</string>
+   
+    <string name="alart_edit_com_editcontent1">时间</string>
+   <string name="alart_edit_com_editcontent2">提前</string>
+   <string-array name="rings">
+          <item >晨曦</item>
+          <item >村庄</item>
+          <item >滴答</item>
+          <item >提醒</item>
+          <item >早晨</item>
+          <item >晚安</item>
+      	</string-array>
+      	
+   <dimen name="alart_edit_weekday_textsize">10sp</dimen>
+   <color name="alart_edit_weekday_textcolor">@color/gray99_color</color>
+</resources>

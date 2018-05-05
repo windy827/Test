@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_listitem_answerrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/white_round_selector"
+        android:padding="5dip" >
+
+		 <TextView
+            android:id="@+id/tv_listitem_answerhelper_date"
+            style="@style/grayTextView"
+            
+            android:textColor="@color/gray66_color"
+            
+            android:layout_marginLeft="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:text="2015-04-11 14:15" />
+        <TextView
+            android:id="@+id/tv_listitem_activity_webmusicfirst_time"
+ 
+            style="@style/grayTextView"
+            android:textColor="@color/greenColor"
+            android:layout_below="@+id/tv_listitem_answerhelper_date"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/answerhelper_question" />
+
+        <TextView
+            android:id="@+id/tv_listitem_answerhelper_question"
+            
+            android:layout_alignTop="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/tv_listitem_activity_webmusicfirst_time"
+             style="@style/grayTextView"
+            android:text="TextViewsfdsfsdfasfafafasfafafasfasfasf" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/grayTextView"
+            android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_below="@+id/tv_listitem_answerhelper_question"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/title_bg"
+            android:text="@string/answerhelper_reply" />
+
+        <TextView
+            android:id="@+id/tv_listitem_answerhelper_reply"
+            style="@style/grayTextView"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignLeft="@+id/tv_listitem_answerhelper_question"
+            android:text="TextViewasfasfasfasfasfasfasfasfasfasfasfasfasfasffsaf" />
+
+        <TextView
+            android:id="@+id/tv_listitem_answerhelp_title_help"
+             style="@style/grayTextView"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/tv_listitem_answerhelper_reply"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/littergreenColor"
+            android:text="@string/answerhelper_help" />
+
+        <TextView
+            android:id="@+id/tv_listitem_answerhelper_help"
+             style="@style/grayTextView"
+            android:layout_alignBaseline="@+id/tv_listitem_answerhelp_title_help"
+            android:layout_alignTop="@+id/tv_listitem_answerhelp_title_help"
+            android:layout_alignLeft="@+id/tv_listitem_answerhelper_reply"
+            android:text="TextViewasfgasfasfasfasfasfasfasfsafasfasfasf" />
+
+        <TextView
+            android:id="@+id/tv_listitem_answer_deviceName"
+            
+            
+           android:layout_alignParentTop="true"
+           android:layout_marginLeft="10dip"
+           android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/tv_listitem_answerhelper_date"
+             style="@style/grayTextView"
+             
+             android:singleLine="true"
+             android:ellipsize="end"
+             android:textColor="@color/redColor"
+            android:text="TextViewsdssssssssssssssssssssssssss" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginRight="10dip"
+            android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_below="@+id/tv_listitem_answer_deviceName"
+            android:layout_marginTop="5dip"
+            layout="@layout/model_diver_hor_whitebg" />
+
+    </RelativeLayout>
+
+</LinearLayout>

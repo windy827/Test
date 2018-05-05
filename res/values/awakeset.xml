@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="awakeset_awake_switch">提示音开关</string>
+    <string name="undistribute_refusecongnize_switch">拒识音开关</string>
+    <string name="awakeset_awake_name">唤醒名称:</string>
+
+    <!-- 唤醒名称 -->
+    <string name="awakeset_awake_name1">Hi云宝【推荐】</string>
+    <string name="awakeset_awake_name2">Hi小播【推荐】</string>
+    <string name="awakeset_awake_name3">云宝</string>
+    <string name="awakeset_awake_name4">小播</string>
+    <string name="awakeset_awake_name5">Hi百灵【推荐】</string>
+    <string name="awakeset_awake_name6">百灵</string>
+    <string name="awakeset_awake_tell1">试着对终端说</string>
+    <string name="awakeset_awake_saycontents">\"你的唤醒名是什么\"</string>
+    <string name="awakeset_awake_tell2">您就能知道终端当前的唤醒名了~</string>
+
+    <!-- 高级设置 -->
+    <string name="awakeset_awake_highset">夜间控制</string>
+    <string name="awakeset_awake_highset_remindvoice">提示音</string>
+     <string name="awakeset_awake_highset_remindtimes">提示音时间段</string>
+    <string name="awakeset_awake_highset_nightModel">夜间模式开关</string>
+  
+    <string name="awakeset_awake_highset_alwaysremind">永远打开提示音</string>
+    <string name="awakeset_awake_highset_definedremind">自定义提示音时间段:</string>
+
+    
+</resources>

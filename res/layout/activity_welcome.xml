@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/welcome_03" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewpage"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/start_Button"
+            style="@style/whiteButton"
+            android:layout_width="@dimen/bt_large_width"
+            android:layout_height="@dimen/rl_height_small"
+            android:layout_gravity="center"
+            android:background="@drawable/feel_selector"
+            
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/indicator"
+            android:layout_width="50dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+ 		
+            
+            <ImageView
+                android:id="@+id/iv_activity_wecome_indicator2"
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/indicators_default" />
+
+          
+            <ImageView
+                android:id="@+id/iv_activity_wecome_indicator3"
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/iv_activity_wecome_indicator2"
+                android:background="@drawable/indicators_default" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

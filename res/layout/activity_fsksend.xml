@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_activity_fsksend1"
+            style="@style/grayTextView_largest"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="请将手机靠近设备" />
+
+        <TextView
+            android:id="@+id/tv_activity_fsksend2"
+            style="@style/grayTextView_largest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_activity_fsksend1"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="" />
+
+        <FrameLayout
+              android:layout_width="200dip"
+                android:layout_height="200dip"
+            android:layout_below="@+id/tv_activity_fsksend2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/bt_activity_fsksend_send_clean"
+               android:layout_width="200dip"
+                android:layout_height="200dip"
+           		
+           		android:layout_gravity="center"
+           		style="@style/grayTextView_large"
+           		android:visibility="gone"
+           		android:textColor="@color/whiteColor"
+           		android:textSize="@dimen/textSize_largest"
+                android:background="@drawable/sendfsk" />
+ 			<ImageView
+                android:id="@+id/iv_anim_sending"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:background="@drawable/anim_sending" />
+            <ImageView
+                android:id="@+id/iv_anim_closetodevice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                
+                android:background="@drawable/anim_close2device" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_activity_fsksend_faild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/wifi_set_notrecive"
+            android:textColor="@color/selector_redtext" />
+
+        <TextView
+            android:id="@+id/tv_activity_fsksend3"
+            style="@style/grayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_activity_fsksend2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:visibility="invisible"
+            android:text="如果没有听到提示，请再次发送声波" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_activity_fsksend_success"
+       style="@style/buttonOfBottom"
+        android:text="听到接收成功" />
+
+</LinearLayout>

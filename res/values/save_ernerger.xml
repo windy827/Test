@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+     <color name="saveernerger_blacktextcolor">@color/gray99_color</color>
+     <color name="saveernerger_graytextcolor">@color/gray99_color</color>
+    <dimen name="saveernerger_textsize_Min">20sp</dimen>
+   
+<dimen name="saveernerger_Rl1_height">50dp</dimen>
+<dimen name="saveernerger_Rl2_height">40dp</dimen>
+ 
+<string name="saveernerger_closeTime">关闭时间段:</string>
+<string name="saveernerger_to">至</string>
+
+ <style name="saveernerger_textTopLeft" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        
+        <item name="android:layout_marginLeft">5dip</item>
+         <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/saveernerger_blacktextcolor</item>
+    </style>  
+    
+  <style name="saveernerger_textBottomLeft" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/saveernerger_closeTime</item>
+        <item name="android:layout_marginLeft">35dip</item>
+        <item name="android:textColor">@color/gray99_color</item>
+        <item name="android:textSize">@dimen/textSize_normal</item>
+    </style>  
+    
+  <style name="saveernerger_WiperSwitch" >
+        <item name="android:layout_width">150dip</item>
+        <item name="android:layout_height">40dip</item>
+         <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">5dip</item>
+    </style>  
+    
+  
+  
+    <style name="saveernerger_ivTopLeft" >
+        <item name="android:layout_width">30dip</item>
+        <item name="android:layout_height">30dip</item>
+         <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    	<item name="android:layout_marginLeft">15dip</item>
+    	
+    </style>  
+    
+    
+      <style name="saveernerger_btLeft" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:layout_centerVertical">true</item>
+    	<item name="android:layout_marginLeft">15dip</item>
+   		<item name="android:background">@drawable/bt_shaixuan</item>
+   		<item name="android:textColor">@color/blue</item>
+   		<item name="android:textSize">@dimen/textSize_normal</item>
+    </style>  
+    
+       <style name="saveernerger_btRight" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>        
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    	<item name="android:layout_marginRight">15dip</item>
+   		<item name="android:background">@drawable/bt_shaixuan</item>
+   		<item name="android:textColor">@color/blue</item>
+   		<item name="android:textSize">@dimen/textSize_normal</item>
+    </style>  
+    
+       
+       <style name="saveernerger_tvTo" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>        
+        
+        <item name="android:layout_centerVertical">true</item>
+    	<item name="android:layout_marginRight">5dip</item>
+    	<item name="android:layout_marginLeft">5dip</item>
+   		<item name="android:text">@string/saveernerger_to</item>
+   		<item name="android:textColor">@color/saveernerger_graytextcolor</item>
+   		<item name="android:textSize">@dimen/textSize_normal</item>
+    </style>  
+</resources>

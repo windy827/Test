@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+                android:id="@+id/rl_alart_cycle"
+                android:layout_width="match_parent"
+                android:background="@drawable/listitem_selector"
+                android:layout_height="@dimen/alart_rlHeight" >
+
+                <ImageView
+                    android:id="@+id/iv_listitem_activity_webmusicfirst_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/detail" />
+
+                <TextView
+                    android:id="@+id/tv_alart_cycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_listitem_activity_webmusicfirst_detail"
+                    android:text="每天" />
+
+                <TextView
+                    android:id="@+id/tv_listitem_activity_webmusicfirst_name"
+                    style="@style/blackTextView"
+                    android:layout_alignBaseline="@+id/tv_alart_cycle"
+                    android:layout_alignBottom="@+id/tv_alart_cycle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="周期" />
+
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/horDiver_withMarginStyle"
+                layout="@layout/model_diver_hor_whitebg" />
+
+ 
+
+</LinearLayout>

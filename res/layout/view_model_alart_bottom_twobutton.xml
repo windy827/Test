@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/bt_model_alart_bottom_save"
+            style="@style/buttonOfBottom"
+           
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            
+            android:layout_weight="1"
+            android:text="@string/alart_save" />
+
+        <Button
+            android:id="@+id/bt_model_alart_bottom_commentset"
+            style="@style/buttonOfBottom"
+         
+          
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+             android:gravity="center"
+            android:layout_weight="1"
+           
+            android:text="@string/alart_commentset" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_model_alart_title" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            layout="@layout/time_layout" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_alart_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alart_rlHeight"
+            android:background="@drawable/listitem_selector" >
+
+            <ImageView
+                android:id="@+id/iv_listitem_activity_webmusicfirst_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:src="@drawable/detail" />
+
+            <TextView
+                android:id="@+id/tv_alart_cycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_listitem_activity_webmusicfirst_detail"
+                android:text="每天"
+                android:textColor="@color/alart_graycolor" />
+
+            <TextView
+                android:id="@+id/tv_listitem_activity_webmusicfirst_name"
+                style="@style/blackTextView"
+                android:layout_alignBaseline="@+id/tv_alart_cycle"
+                android:layout_alignBottom="@+id/tv_alart_cycle"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:text="周期" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_alart_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alart_rlHeight"
+            android:visibility="gone"
+            android:background="@drawable/listitem_selector" >
+
+            <ImageView
+                android:id="@+id/iv_listitem_activity_webmusicfirst_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:src="@drawable/detail" />
+
+            <TextView
+                android:id="@+id/tv_alart_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_listitem_activity_webmusicfirst_detail"
+                android:text="2015-09-15"
+                android:textColor="@color/alart_graycolor" />
+
+            <TextView
+                android:id="@+id/tv_listitem_activity_webmusicfirst_name323"
+                style="@style/blackTextView"
+                android:layout_alignBaseline="@+id/tv_alart_date"
+                android:layout_alignBottom="@+id/tv_alart_date"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:text="日期" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                layout="@layout/model_diver_hor_whitebg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alart_comment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rl_height_comment"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/white_round_selector"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_listitem_activity_webmusicfirst_time"
+                style="@style/grayTextView_larger_Selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/alart_comment" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_save" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip" >
+
+        <TextView
+            android:id="@+id/tv_activity_soloalbum_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/soloalbum_textcolor"
+            android:textSize="@dimen/soloalbum_titleTextSize"
+            android:layout_marginLeft="@dimen/soloalbum_MarginLeftOrRight"
+            android:text="@string/soloalbum_title" />
+
+        <ImageView
+            android:id="@+id/iv_activity_soloalbum_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/soloalbum_MarginLeftOrRight"
+            android:background="@drawable/add_selector" />
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <ListView
+        android:id="@+id/lv_activity_soloalbum"
+        style="@style/CommenListViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+         />
+
+</LinearLayout>

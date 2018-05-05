@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_terminal_nickname1"
+                    style="@style/grayTextView_larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/connected_instruction" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/grayTextView_larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv_listitem_terminal_nickname1"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/connected_wifiset" />
+
+                <TextView
+                    android:id="@+id/tv_listitem_terminal_baterryinfo"
+                    style="@style/grayTextView_larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_alignRight="@+id/textView3"
+                   
+                     android:layout_below="@+id/bt_activity_notconnected_wifiset1"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/connected_research" />
+
+                <Button
+                    android:id="@+id/bt_activity_notconnected_research1"
+                    style="@style/buttonOfBottom"
+                    android:layout_width="200dip"
+                    
+                    android:layout_below="@+id/tv_listitem_terminal_baterryinfo"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="10dip"
+                    android:text="@string/connected_bt_researchtext" />
+
+                <Button
+                    android:id="@+id/bt_activity_notconnected_wifiset1"
+                    style="@style/buttonOfBottom"
+                    android:layout_width="200dip"
+                 
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/connected_bt_wifiset" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

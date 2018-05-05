@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_activity_connectwifi_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            style="@style/grayTextView"
+            android:text="设备与手机正在建立连接中，请耐心等待~" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/grayTextView_largest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="正在连接设备..."
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_anim_connectwifi"
+            android:layout_width="300dip"
+            android:layout_height="200dip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dip"
+            android:layout_below="@+id/tv_activity_connectwifi_waittime"
+            android:background="@drawable/anim_connectdevice" />
+
+        <TextView
+            android:id="@+id/tv_activity_connectwifi_waittime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_activity_connectwifi_remind"
+            android:layout_marginTop="20dip"
+            android:layout_centerHorizontal="true"
+            style="@style/grayTextView_largest"
+            android:textColor="@color/redColor"
+            android:text="最多60秒内完成连接" />
+
+    </RelativeLayout>
+
+</LinearLayout>

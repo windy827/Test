@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+   
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_activity_terminal_refresh"
+                        style="@style/wifiset_imageViewremind" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_terminal_info_batterey"
+                        style="@style/wifiset_textremind"
+                        android:text="@string/wifi_set_remind1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/linearLayout1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_model_playing_like"
+                        style="@style/wifiset_imageViewremind" />
+
+                    <TextView
+                        android:id="@+id/tv_listitem_alart_top_incident"
+                        style="@style/wifiset_textremind"
+                        android:text="@string/wifi_set_remind2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_listitem_alart_skip"
+                        style="@style/wifiset_imageViewremind" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        style="@style/wifiset_textremind"
+                        android:text="@string/wifi_set_remind3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/linearLayout3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_listitem_alart_close"
+                        style="@style/wifiset_imageViewremind" />
+
+                    <TextView
+                        android:id="@+id/tv_listitem_alart_close"
+                        style="@style/wifiset_textremind"
+                        android:text="@string/wifi_set_remind4" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="alart_textcolor">@color/gray99_color</color>
+    <color name="alart_graycolor">@color/gray66_color</color>
+
+    <dimen name="alart_rlHeight">50dip</dimen>
+      <dimen name="alart_title_rlHeight">50dip</dimen>
+    <dimen name="alart_iv_heightAndwidth">20dip</dimen>
+    <dimen name="alart_iv_margin">2dip</dimen>
+    <dimen name="alart_add_iv_heightAndwidth">35dip</dimen>
+    <dimen name="alart_textsize">20sp</dimen>
+    <dimen name="alart_textsize_min_normal">@dimen/textSize_normal</dimen>
+    <dimen name="alart_textsize_min">12sp</dimen>
+
+    <string name="alart_edit">编辑</string>
+    <string name="alart_close">已关闭</string>
+    <string name="alart_open">已打开</string>
+    <string name="alart_skip">跳过</string>
+     <string name="alart_comment">通用设置</string>
+    <string name="alart_del">删除</string>
+    <string name="alart_alartlist">闹钟列表</string>
+    
+    
+      <string name="alart_birth_tell1">2.试着对终端说</string>
+	<string name="alart_birth_saycontents">\"播报生日信息\"</string>
+    <string name="alart_birth_tell2">您就能知道设置的生日信息了~</string>
+    
+     <string name="alart_remind_tell1">2.试着对终端说</string>
+	<string name="alart_remind_saycontents">\"播报备忘信息\"</string>
+    <string name="alart_remind_tell2">您就能知道设置的备忘信息了~</string>
+
+</resources>

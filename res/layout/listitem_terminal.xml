@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_listitem_terminal_into"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_terminal"
+        android:background="@drawable/listitem_selector"
+        android:focusable="false"
+        android:minHeight="@dimen/rl_height_largest" >
+
+        <com.tts168.autoset.view.definedview.RoundAngleImageView
+            android:id="@+id/iv_listitem_terminal_device"
+            android:layout_width="@dimen/iv_height_terminal_width"
+            android:layout_height="@dimen/iv_height_terminal_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dip"
+            android:focusable="false"
+            android:src="@drawable/bailing2" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rl_height_largest"
+            android:layout_toRightOf="@+id/iv_listitem_terminal_device"
+            layout="@layout/model_diver_ver_whitebg"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_name"
+            style="@style/grayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_listitem_terminal_device"
+            android:layout_margin="5dip"
+            android:layout_toLeftOf="@+id/rv_listitem_terminal_expand"
+            android:layout_toRightOf="@+id/iv_listitem_terminal_device"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="小云宝" />
+
+        <RelativeLayout
+            android:id="@+id/rv_listitem_terminal_expand"
+            android:layout_width="80dip"
+            android:layout_height="@dimen/rl_height_terminal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:src="@drawable/down_press" >
+
+            <LinearLayout
+                android:id="@+id/ll_listitem_terminal_expand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dip"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/iv_listitem_terminal_sound"
+                    android:layout_width="60dip"
+                    android:layout_height="50dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:src="@drawable/findme_selector" />
+
+                <ImageView
+                    android:id="@+id/bt_listitem_terminal_info"
+                    android:layout_width="60dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:src="@drawable/deviceinfo_selector"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/bt_listitem_terminal_editname"
+                    android:layout_width="60dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:src="@drawable/editnickname_selector" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_listitem_terminal_expand"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:focusable="false"
+                android:scaleType="center"
+                android:src="@drawable/down_gray"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/diver2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rl_height_terminal"
+            android:layout_toLeftOf="@+id/rv_listitem_terminal_expand"
+            layout="@layout/model_diver_ver_whitebg"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_baterryinfo"
+            style="@style/grayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_listitem_terminal_device"
+            android:layout_alignLeft="@+id/tv_listitem_terminal_name"
+            android:layout_marginBottom="5dip"
+            android:layout_toLeftOf="@+id/diver2"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="100%"
+            android:visibility="gone" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/diver2"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/rl_height_terminal"
+            android:layout_toLeftOf="@+id/rv_listitem_terminal_expand"
+            layout="@layout/model_diver_ver_whitebg" />
+    </RelativeLayout>
+
+</LinearLayout>

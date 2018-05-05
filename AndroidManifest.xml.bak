@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.larkiv.larksmart"
+    android:installLocation="auto"
+    android:versionCode="2"
+    android:versionName="01.02" > <!-- 将应用安装在SD卡上，防止装不上的情况 -->
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 允许程序改变网络链接状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序访问访问WIFI网络状态信息 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 允许程序改变WIFI链接状态 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 蓝牙录音 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 某些手机启动SCO音频连接需要此权限 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 蓝牙录音检测耳机状态 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name="com.tts168.autoset.tools.commen.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/larksmartlogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tts168.autoset.activity.welcome.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tts168.autoset.activity.welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.welcome.NetUnableActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.SearchDevicesActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- TCP连接等待界面【扫面设备界面】 -->
+        <activity
+            android:name="com.tts168.autoset.activity.TCPConnectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 没有连接上设备的界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.NotConnectedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 主菜单界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.mainmenu.MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 播报设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.fullread.ReadTimeSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 按键设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.presskey.PresskeySetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 终端管理界面Old -->
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.terminal.TerminalActivityOld"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 终端管理界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.terminal.TerminalActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 终端信息界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.terminal.TerminalInfoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 功能配置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.SysSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+   <!-- 帮助界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.help.HelpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 高级功能配置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.FuncSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 闹铃主界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.AlartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 添加闹铃界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.addalart.AlartFragmentTabActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 闹铃通用设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.AwakeAlartCommentSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 每日闹铃编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.AlartEditDailyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 起床闹铃编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.AwakeAlartEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 睡眠闹铃编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.SleepAlartEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 自定义闹铃编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.DefinedAlartEditActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 备忘闹铃编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.RemindAlartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 生日闹铃编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.BirthdayAlartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 纪念日闹铃编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.alart.AlartEditComActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 闹铃提醒设置主界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.AlartClockMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 百灵乐购界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.larkbuy.LarkBuyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 问答助手帮助界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.answerhelper.HelpOfAnswerHelperActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 问答助手记录界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.answerhelper.AnswerRecordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 产品介绍界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.about.ProducIntroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 百灵智能 -->
+        <activity
+            android:name="com.tts168.autoset.activity.about.AboutLarkSmartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 闹铃提醒编辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.AlartEditActivityOld"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 个性化设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.individuation.IndividuationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 城市设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.cityset.CitySetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 唤醒控制设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.wakeset.WakeSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 睡眠音乐设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.sleepset.SleepSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 夜间控制界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.nightcontrol.NightControlActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 其它设置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.otherset.OtherSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 节能控制界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.highset.saveerneger.SaveErnegerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 音乐播放主界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.player.PlayingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 个人专辑界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.player.SoloAlbumActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- wifi配置界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.AddDeviceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.WifiSetNokeyRemindActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.WifiSetNokeyWaitingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.WifiSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.WifiSetRemindActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.WifiSetWaitingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.quickset.WifiSetNoRemindActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 网络音乐 -->
+        <activity
+            android:name="com.tts168.autoset.activity.webmusic.WebmusicHelperActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.webmusic.WebMusicFirstActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.webmusic.WebMusicSecondActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.webmusic.WebMusicThridActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.tts168.autoset.activity.webmusic.WebMusicPlayActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 关于云宝 -->
+        <activity
+            android:name="com.tts168.autoset.activity.about.AboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.tts168.autoset.activity.about.AboutUsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.tts168.autoset.activity.about.SuggestActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- wifi配置提醒界面 -->
+        <activity
+            android:name="com.tts168.autoset.activity.WifiSetRemindActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <receiver android:name="com.tts168.autoset.tools.update.ReplaceBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.tts168.autoset.tools.update.DownloadService" />
+        <service
+            android:name="com.tts168.autoset.service.DeviceSearchService"
+            android:process=":remote" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.tts168.autoset.service.EyeProtect" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.tts168.autoset.reciver.DeviceSearchServiceBroadcast" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.tts168.autoset.reciver.DIVIDE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

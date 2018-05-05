@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#ff56b0fa"
+               android:orientation="vertical" >
+
+               <LinearLayout
+                   android:id="@+id/linearLayout1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                    >
+
+                   <ImageButton
+                       android:id="@+id/imageButton_toggle"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:background="@drawable/handler" />
+
+                   <TextView
+                       android:id="@+id/text2"
+                       android:layout_width="fill_parent"
+                       android:layout_height="fill_parent"
+                       android:layout_weight="1.0"
+                       android:gravity="center"
+                       android:text="系统配置"
+                       android:textColor="#000000"
+                       android:textSize="20.0dip" />
+
+                   <TextView
+                       android:id="@+id/text3"
+                       android:layout_width="fill_parent"
+                       android:layout_height="fill_parent"
+                       android:layout_weight="1.0"
+                       android:gravity="center"
+                       android:text="语音配置"
+                       android:textColor="#000000"
+                       android:textSize="20.0dip" />
+               </LinearLayout>
+
+               <ImageView
+                   android:id="@+id/cursor"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   
+                   android:layout_marginBottom="5dp"
+                   android:scaleType="matrix"
+                   android:src="@drawable/cursor" />
+
+           </LinearLayout>
+
+</LinearLayout>

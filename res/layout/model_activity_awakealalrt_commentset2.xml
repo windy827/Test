@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView
+            android:id="@+id/iv_listitem_activity_webmusicfirst_info"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/set" />
+
+        <TextView
+            android:id="@+id/tv_alart_cycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_listitem_activity_webmusicfirst_info"
+             style="@style/grayTextView_larger"
+            android:text="更多播报设置" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small" >
+
+        <TextView
+            android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            style="@style/grayTextView"
+            android:text="时间日期" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_sleep_model_activity_awakealart_comment"
+             style="@style/grayTextView_Selector"
+             android:visibility="invisible"
+            android:text="样例" />
+        
+        <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_activity_awawke_comment1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/Switch_marginTop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+               
+                 />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+ 
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small" >
+
+        <TextView
+            android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            style="@style/grayTextView"
+            android:text="今日天气" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_sleep_model_activity_awakealart_comment"
+            style="@style/grayTextView_Selector"
+             android:visibility="invisible"
+            android:text="样例" />
+        
+        <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_activity_awawke_comment2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/Switch_marginTop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                 />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+ 
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small" >
+
+        <TextView
+            android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            style="@style/grayTextView"
+            android:text="备忘信息" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_sleep_model_activity_awakealart_comment"
+            style="@style/grayTextView_Selector"
+             android:visibility="invisible"
+            android:text="样例" />
+        
+        <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_activity_awawke_comment3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/Switch_marginTop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                 />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+ 
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small" >
+
+        <TextView
+            android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            style="@style/grayTextView"
+            android:text="生日信息" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_sleep_model_activity_awakealart_comment"
+            style="@style/grayTextView_Selector"
+             android:visibility="invisible"
+            android:text="样例" />
+        
+        <com.tts168.autoset.view.WiperSwitch
+            android:id="@+id/switch_activity_awawke_comment4"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/Switch_marginTop" />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height_small"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            style="@style/grayTextView"
+            android:text="节气祝福" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_sleep_model_activity_awakealart_comment"
+            style="@style/grayTextView_Selector"
+             android:visibility="invisible"
+            android:text="样例" />
+        
+        <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_activity_awawke_comment5"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/Switch_marginTop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                 />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip" 
+         android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dp"
+            style="@style/grayTextView"
+            android:text="节日祝福" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_sleep_model_activity_awakealart_comment"
+            style="@style/grayTextView_Selector"
+             android:visibility="invisible"
+            android:text="样例" />
+        
+        <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_activity_awawke_comment6"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/Switch_marginTop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                 />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/rl_height_small" >
+
+      <TextView
+          android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="23dp"
+          android:text="重复播报"
+          style="@style/grayTextView" />
+
+      <RadioGroup
+          android:id="@+id/rg_activity_awakeset_comment"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/tv_sleep_model_activity_awakealart_comment"
+          android:layout_alignParentRight="true"
+          android:orientation="horizontal" >
+
+          <RadioButton
+              android:id="@+id/cb_activity_awakeset_comment1"
+              style="@style/radiobutton_Style"
+              android:layout_width="match_parent"
+              android:layout_weight="0.9"
+            
+              android:text="不播报" />
+
+          <RadioButton
+              android:id="@+id/cb_activity_awakeset_comment2"
+              style="@style/radiobutton_Style"
+              android:layout_width="match_parent"
+              android:layout_weight="1"
+              android:text="1次" />
+
+          <RadioButton
+              android:id="@+id/cb_activity_awakeset_comment3"
+              style="@style/radiobutton_Style"
+              android:layout_width="match_parent"
+              android:layout_weight="1"
+              android:checked="true"
+              android:text="2次" />
+
+      </RadioGroup>
+  </RelativeLayout>
+
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+</LinearLayout>

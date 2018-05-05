@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:minHeight="100dip">
+
+        <Button
+            android:id="@+id/bt_listitem_terminal_connectdevice"
+            style="@style/whiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:minWidth="100dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/terminal_Device_change" />
+
+        <Button
+            android:id="@+id/bt_listitem_terminal_deviceinfo"
+            style="@style/whiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:minWidth="80dip"
+            android:layout_below="@+id/bt_listitem_terminal_connectdevice"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/textSize_normal"
+            android:text="@string/terminal_Device_info" />
+
+        <Button
+            android:id="@+id/bt_listitm_terminal_finddevice"
+            android:layout_width="60dip"
+                android:layout_height="50dip"
+                android:background="@drawable/btn_sound_selector"
+            android:layout_alignBaseline="@+id/bt_listitem_terminal_deviceinfo"
+            android:layout_alignBottom="@+id/bt_listitem_terminal_deviceinfo"
+            android:layout_alignRight="@+id/bt_listitem_terminal_connectdevice"
+            />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bt_listitm_terminal_finddevice"
+            style="@style/horDiver_withMarginStyle"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_nickname1"
+            style="@style/grayTextView_larger"
+            android:layout_alignBaseline="@+id/bt_listitem_terminal_connectdevice"
+            android:layout_alignBottom="@+id/bt_listitem_terminal_connectdevice"
+             android:layout_toRightOf="@+id/tv_activity_searchdevices_result"
+            android:singleLine="true"
+            android:text="TextView"
+            
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_searchdevices_result"
+            style="@style/grayTextView_larger_Selector"
+            android:layout_alignBaseline="@+id/tv_listitem_terminal_nickname1"
+            android:layout_alignBottom="@+id/tv_listitem_terminal_nickname1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/terminal_nickname"
+            android:textColor="@color/gray66_color"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

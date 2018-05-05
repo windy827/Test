@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <TextView
+        android:id="@+id/tv_listitem_activity_webmusicfirst_time"
+        style="@style/grayTextView_larger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:padding="10dip"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+		
+        
+        android:text="@string/answerhelper_recordalart" />
+
+   
+
+    <ListView
+        android:id="@+id/lv_activity_answerrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        style="@style/CommenListViewStyle"
+        android:listSelector="@color/translate_color"
+        android:divider="@color/translate_color"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:transcriptMode="alwaysScroll" 
+        >
+    </ListView>
+
+</LinearLayout>

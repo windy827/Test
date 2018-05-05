@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <RadioGroup
+          android:id="@+id/rg_model_activity_suggest_about"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/tv_about"
+          android:layout_marginLeft="5dip"
+          android:layout_margin="5dip"
+          android:layout_alignParentRight="true"
+          android:orientation="horizontal" >
+
+          <RadioButton
+              android:id="@+id/rb_model_activity_suggest_aboutApp"
+              style="@style/radiobutton_Style"
+              android:layout_width="match_parent"
+              android:layout_weight="0.9"
+            
+            android:checked="true"
+              android:text="@string/aboutus_suggestion_aboutApp" />
+
+          <RadioButton
+              android:id="@+id/rb_model_activity_suggest_aboutHard"
+              style="@style/radiobutton_Style"
+              android:layout_width="match_parent"
+              android:layout_weight="1"
+              android:text="@string/aboutus_suggestion_aboutHard" />
+
+         
+
+      </RadioGroup>
+
+ <TextView
+     android:id="@+id/tv_about"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@style/grayTextView_large"
+     android:layout_margin="10dip"
+     android:text="@string/aboutus_suggestion_about" />
+ 
+ <TextView
+     android:id="@+id/tv_suggesttype"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@style/grayTextView_large"
+     android:layout_marginTop="20dip"
+      android:layout_marginLeft="10dip"
+      android:layout_marginBottom="20dip"
+     android:layout_below="@+id/rg_model_activity_suggest_about"
+     android:text="@string/aboutus_suggestion_feedback" />
+
+ <Button
+     android:id="@+id/bt_model_activity_suggest_feedbacktype"
+      android:layout_width="150dip"
+      android:layout_height="@dimen/bt_small_height"
+     android:layout_below="@+id/rg_model_activity_suggest_about"
+     android:layout_marginTop="16dip"
+     android:layout_toRightOf="@+id/tv_suggesttype"
+      android:background="@drawable/bt_shaixuan"
+        android:paddingRight="10dip"
+            android:textColor="@color/gray99_color"
+            android:text="@string/aboutus_suggestion_feedback1" />
+
+</RelativeLayout>

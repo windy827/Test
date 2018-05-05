@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_timeset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setmodelback"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sleepset"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/tv_sleepset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="34dp"
+                android:text="30秒"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_press_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tv_sleepset"
+                android:text="@string/sleepset"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_listitem_alart_skip"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/diver" />
+
+        <RelativeLayout
+            android:id="@+id/rl_getinfoset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_activity_searchdevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/getinfoset"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_activity_searchdevices"
+                android:layout_marginBottom="10dp" >
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/gettime1"
+                    android:textColor="#ff000000" />
+                  <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cb4"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/gettime2"
+                    android:textColor="#ff000000" />
+  				<CheckBox
+                    android:id="@+id/cb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cb6"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    
+                    android:text="@string/gettime3"
+                    android:textColor="#ff000000" />
+  				
+                <CheckBox
+                    android:id="@+id/cb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/cb1"
+                    android:text="@string/gettime4"
+                    android:textColor="#ff000000" />
+                
+                <CheckBox
+                    android:id="@+id/cb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cb2"
+                    android:layout_below="@+id/cb2"
+                    android:checked="true"
+                    android:text="@string/gettime5"
+                    android:textColor="#ff000000" />
+  				<CheckBox
+                    android:id="@+id/cb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cb5"
+                    android:layout_alignBottom="@+id/cb5"
+                    android:layout_alignLeft="@+id/cb3"
+                    android:text="@string/gettime6"
+                    android:textColor="#ff000000" />
+                <CheckBox
+                    android:id="@+id/cb7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/cb4"
+                    android:checked="true"
+                    android:text="@string/gettime7"
+                    android:textColor="#ff000000" />
+
+                <CheckBox
+                    android:id="@+id/cb8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cb7"
+                    android:layout_alignBottom="@+id/cb7"
+                    android:layout_alignLeft="@+id/cb5"
+                    android:text="@string/gettime8"
+                    android:textColor="#ff000000" />
+          
+                <CheckBox
+                    android:id="@+id/cb9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cb6"
+                    android:layout_below="@+id/cb6"
+                    android:text="@string/gettime9"
+                    android:textColor="#ff000000" />
+                
+                 <CheckBox
+                    android:id="@+id/cb10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/cb7"
+                    android:checked="true"
+                    android:text="@string/gettime10"
+                    android:textColor="#ff000000" />
+                 <CheckBox
+                    android:id="@+id/cb11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/cb8"
+                    android:layout_alignRight="@+id/cb8"
+                    android:layout_below="@+id/cb8"
+                    
+                    android:text="@string/gettime11"
+                    android:textColor="#ff000000" />
+                 <CheckBox
+                    android:id="@+id/cb12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_alignLeft="@+id/cb9"
+                    android:layout_alignRight="@+id/cb9"
+                    android:layout_below="@+id/cb9"
+                    
+                    android:text="@string/gettime12"
+                    android:textColor="#ff000000" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

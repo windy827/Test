@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/include1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_mainmenu_tickler_alart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/listitem_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_model_playing_like"
+                    style="@style/mainmenu_iv_detail" />
+
+                <TextView
+                    android:id="@+id/tv_item_terminal_child_devicename"
+                    style="@style/mainmenu_textLittleName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/iv_model_playing_like"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mainmene_alartSetName" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                layout="@layout/model_diver_hor_whitebg"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/mainmenu_set_high"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_alart_top_incident"
+                    style="@style/mainmenu_textLittleName"
+                    android:text="@string/mainmene_highsetName" />
+
+                <TextView
+                    android:id="@+id/tv_model_playing_pb_right"
+                    style="@style/mainmenu_textLittleInfo"
+                    android:layout_alignLeft="@+id/tv_listitem_alart_top_incident"
+                    android:layout_below="@+id/tv_listitem_alart_top_incident"
+                    android:text="@string/mainmene_highsetInfo" />
+
+                <ImageView
+                    android:id="@+id/iv_model_player_sound"
+                    style="@style/mainmenu_iv_detail" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/RelativeLayout1"
+            layout="@layout/model_diver_ver_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" 
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_activity_terminal_refresh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                 android:layout_alignLeft="@+id/tv_listitem_answerhelp_title_help"
+                android:background="@drawable/tickler" />
+
+            <TextView
+                android:id="@+id/tv_listitem_answerhelp_title_help"
+                style="@style/mainmenu_textLargeName"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/iv_activity_terminal_refresh"
+                android:layout_margin="5dp"
+                android:text="@string/mainmene_tivklerName" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+</LinearLayout>

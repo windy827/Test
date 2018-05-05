@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+     <color name="mainmene_blacktextcolor">@color/gray99_color</color>
+     <color name="mainmene_graytextcolor">@color/gray99_color</color>
+    <dimen name="mainmene_textsize_Max">25sp</dimen>
+    <dimen name="mainmene_textsize_Min">20sp</dimen>
+   <string name="mainmene_setName">云宝设置</string>
+<string name="mainmene_quicksetName">快速设置</string>
+<string name="mainmene_quicksetInfo">快速配置Wifi信息</string>
+<string name="mainmene_highsetName">高级设置</string>
+<string name="mainmene_highsetInfo">进入更多功能设置</string>
+
+  <string name="mainmene_tivklerName">备忘记事</string>
+<string name="mainmene_alartSetName">闹铃提醒</string>
+<string name="mainmene_alartSetInfo">闹铃设置</string>
+<string name="mainmene_commemorationSetName">生日纪念日设置</string>
+<string name="mainmene_commemorationSetInfo">生日纪念日设置</string>
+
+ <string name="mainmene_aboutus">关于云宝</string>
+ <string name="mainmene_brife">云宝简介</string>
+ <string name="mainmene_help">使用帮助</string>
+ <string name="mainmene_more">关于更多</string>
+ 
+ <style name="mainmenu_textLittleName" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        
+        <item name="android:layout_marginLeft">14dp</item>
+         <item name="android:textSize">@dimen/mainmene_textsize_Min</item>
+        <item name="android:textColor">@color/mainmene_graytextcolor</item>
+    </style>  
+    
+  <style name="mainmenu_textLittleInfo" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+         <item name="android:textSize">@dimen/mainmene_textsize_Min</item>
+        <item name="android:textColor">@color/mainmene_graytextcolor</item>
+    </style>  
+    
+  <style name="mainmenu_textLargeName" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+         <item name="android:textSize">@dimen/mainmene_textsize_Min</item>
+        <item name="android:textColor">@color/mainmene_blacktextcolor</item>
+    </style>  
+    
+  
+  
+    <style name="mainmenu_iv_detail" >
+        <item name="android:layout_width">50dip</item>
+        <item name="android:layout_height">50dip</item>
+         <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    	<item name="android:background">@drawable/detail</item>
+    </style>  
+</resources>

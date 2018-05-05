@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_nickname1"
+            style="@style/grayTextView_larger"
+            android:layout_below="@+id/iv_activity_wifiset_remind_play2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/wifi_set_remind_sending"
+            android:textSize="@dimen/textSize_largest" />
+
+        <TextView
+            android:id="@+id/tv_listitem_terminal_baterryinfo"
+            style="@style/grayTextView_larger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_listitem_terminal_nickname1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dip"
+             android:layout_marginRight="20dip"
+              android:layout_marginTop="10dip"
+               android:layout_marginBottom="10dip"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_activity_wifiset_remind_play2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/wifi_config_icon" />
+
+        <Button
+            android:id="@+id/bt_activity_wifiset_result_setfailed1"
+            style="@style/buttonOfBottom"
+            android:layout_width="250dip"
+            android:layout_height="50dip"
+            android:layout_alignLeft="@+id/bt_activity_wifiset_result_connected1"
+            android:layout_marginLeft="0dip"
+            android:layout_below="@+id/tv_listitem_answerrecord_question"
+            android:layout_marginTop="15dip"
+            android:text="@string/wifi_set_send_result_alart_faild" />
+
+        <include
+            android:id="@+id/diver1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_listitem_terminal_baterryinfo"
+            style="@style/horDiver_withMarginStyle"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <Button
+            android:id="@+id/bt_activity_wifiset_result_connected1"
+            style="@style/buttonOfBottom"
+            android:layout_width="250dip"
+            android:layout_height="50dip"
+          
+            android:layout_centerHorizontal="true"
+             android:layout_below="@+id/tv_listitem_activity_webmusicfirst_time"
+             android:layout_marginTop="15dip"
+            android:text="@string/wifi_set_send_result_alart_connected" />
+
+        <TextView
+            android:id="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             style="@style/grayTextView"
+            android:layout_alignLeft="@+id/tv_listitem_terminal_baterryinfo"
+            android:layout_below="@+id/diver1"
+            android:layout_marginTop="10dip"
+            android:visibility="invisible"
+            android:text="@string/wifi_set_send_result_alart_connected" />
+
+        <TextView
+            android:id="@+id/tv_listitem_answerrecord_question"
+            style="@style/grayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_below="@+id/bt_activity_wifiset_result_connected1"
+           android:layout_marginTop="5dip"
+            android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_time"
+            android:visibility="invisible"
+            android:text="@string/wifi_set_send_result_alart_faild" />
+
+    </RelativeLayout>
+
+</LinearLayout>

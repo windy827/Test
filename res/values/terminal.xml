@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+    <string name="terminal_title">终端信息</string>
+    <string name="terminal_addgroup">添加分组</string>
+    <string name="terminal_nickname">昵称:</string>
+    <string name="terminal_addgroup_hinit">请输入要添加分组的名称</string>
+     <dimen name="et_terminal_addgroup_textSize">@dimen/textSize_normal</dimen>
+    <string name="terminal_addDevice">添加设备</string>
+    
+    <dimen name="bt_terminal_addgroup_height">40dip</dimen>
+     <dimen name="bt_terminal_addgroup_width">100dip</dimen>
+     <dimen name="bt_terminal_addgroup_textSize">18sp</dimen>
+     
+    <dimen name="bt_terminal_addDevice_height">50dip</dimen>
+     <dimen name="bt_terminal_addDevice_width">150dip</dimen>
+      <dimen name="bt_terminal_addDevice_textSize">20sp</dimen>
+      
+      
+      
+        <string name="terminal_Device_info">设备详情</string>
+        <string name="terminal_Device_editname">更改昵称</string>
+        <color name="terminal_Device_info_tv_titlecolor">@color/textColor</color>  
+         <dimen name="terminal_Device_info_tv_textsize">18sp</dimen>    
+        <string name="terminal_Device_edit">编辑</string>
+        <string name="terminal_Device_mac">Mac地址:</string>
+        <string name="terminal_Device_IP">IP地址:</string>
+        <string name="terminal_Device_batterey">电池电量:</string>
+        <string name="terminal_Device_wifissi">设备Wifi强度:</string>
+        <string name="terminal_Device_DWversion">硬件版本号:</string>
+        <string name="terminal_Device_SWversion">软件版本号:</string>
+        <string name="terminal_setfile_ID">配置文件版本号:</string>
+        <string name="terminal_Device_ID">产品ID:</string>
+         <string name="terminal_ServerSate">服务器:</string>
+        
+       <string name="terminal_Device_change">连接设备</string>
+        <string name="terminal_Device_moveto">更换分组</string>
+        
+        
+        
+         <!-- TextView 电池电量等的 模板 -->
+    <style name="TerminalLeftTextViewStyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_marginLeft">30dip</item>
+         <item name="android:textColor">@color/terminal_Device_info_tv_titlecolor</item>
+         <item name="android:textSize">@dimen/terminal_Device_info_tv_textsize</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    
+        <!-- TextView 显示电池电量等的 模板 -->
+    <style name="TerminalRightTextViewStyle" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_marginRight">20dip</item>
+         <item name="android:textColor">@color/terminal_Device_info_tv_titlecolor</item>
+         <item name="android:textSize">@dimen/terminal_Device_info_tv_textsize</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>

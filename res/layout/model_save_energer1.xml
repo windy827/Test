@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/saveernerger_Rl1_height" >
+
+        <ImageView
+            android:id="@+id/iv_inviduation_group"
+            style="@style/saveernerger_ivTopLeft"
+            android:background="@drawable/light_control" />
+
+        <TextView
+            android:id="@+id/tv_savenerger1_name"
+            style="@style/saveernerger_textTopLeft"
+            android:layout_toRightOf="@+id/iv_inviduation_group"
+            android:text="光带控制" />
+
+        <com.tts168.autoset.view.WiperSwitch
+            android:id="@+id/switch_savenerger1"
+            style="@style/saveernerger_WiperSwitch"
+            android:layout_marginTop="@dimen/Switch_marginTop" />
+    </RelativeLayout>
+
+     <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/saveernerger_Rl2_height" >
+
+        <TextView
+            android:id="@+id/tv_activity_about_hasupdate"
+            style="@style/saveernerger_textBottomLeft"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_savenerger1_time1"
+            style="@style/saveernerger_btLeft"
+            android:layout_toRightOf="@+id/tv_activity_about_hasupdate"
+            android:text="21:00" />
+
+        <Button
+            android:id="@+id/bt_savenerger1_time2"
+            style="@style/saveernerger_btRight"
+            android:layout_toRightOf="@+id/tv_listitem_alart_top_incident"
+            android:text="09:00" />
+
+        <TextView
+            android:id="@+id/tv_listitem_alart_top_incident"
+            style="@style/saveernerger_tvTo"
+            android:layout_alignBaseline="@+id/bt_savenerger1_time1"
+            android:layout_alignBottom="@+id/bt_savenerger1_time1"
+            android:layout_toRightOf="@+id/bt_savenerger1_time1" />
+    </RelativeLayout>
+
+</LinearLayout>

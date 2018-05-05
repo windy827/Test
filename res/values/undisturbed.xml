@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+      <string name="undisturbed_prompt">提示音开关</string>
+        <string name="undisturbed_prompt_ingo">此开关用于控制\"嘀\"、\"啊呃\"的提示音</string>
+       <string name="undisturbed_a_o_prompt_ingo">此开关用于控制\"啊呃\"的提示音</string>
+       <string name="undisturbed_prompt_try">试着对终端说</string>
+     <string name="undisturbed_prompt_alarm">\"打开提示音\",\"关闭提示音\"</string>
+     <!-- 夜间控制 --> 
+     <string name="nightControld_switch">夜间模式开关</string>
+       <string name="undisturbed_startTime">夜间开始:</string>
+       <string name="undisturbed_endTime">夜间结束:</string>
+        <string name="undisturbed_vol">夜间音量:</string>
+        
+         <string name="undisturbedcontrol_alarm1">1.关闭\"嘀\"、\"啊呃\"的提示音;</string>
+      <string name="undisturbedcontrol_alarm2">2.关闭Wifi指示灯;</string>
+      <string name="undisturbedcontrol_alarm3">3.关闭整点半点报时.</string>
+      
+        
+</resources>

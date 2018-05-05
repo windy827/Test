@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_terminal_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/setmodel_ll_selector" >
+
+        <TextView
+            android:id="@+id/tv_item_terminal_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:text="我的云宝组" />
+
+        <ImageView
+            android:id="@+id/iv_item_terminal_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/tv_item_terminal_group"
+            android:background="@drawable/notexpand" />
+
+        <Button
+            android:id="@+id/bt_terminal_item_group_delete"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/tv_item_terminal_group"
+            android:layout_alignBottom="@+id/tv_item_terminal_group"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/blue_round_selector"
+            android:focusable="false"
+            android:text="删除" />
+
+        <TextView
+            android:id="@+id/tv_item_terminal_group_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_item_terminal_group"
+             android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

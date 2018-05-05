@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+      <include
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+       
+       android:layout_marginLeft="5dip"
+          android:layout_marginTop="2dp"
+          android:layout_marginBottom="2dip"
+          layout="@layout/view_model_edittext_defined" />
+      <include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/model_diver_hor_whitebg" />
+        <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                layout="@layout/time_layout" />
+
+<include
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/model_diver_hor_whitebg" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_activity_webmusicfirst_name"
+                    style="@style/grayTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/greenColor"
+                    android:text="温馨提示:" />
+
+                <TextView
+                    android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+                    style="@style/grayTextView"
+                    android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_below="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="1.备忘信息默认会在当天的起床闹铃中播放哦！" />
+                
+                  <RelativeLayout
+    					android:layout_width="match_parent"
+    					android:layout_height="wrap_content" 
+    					   android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+    					  android:layout_below="@+id/tv_sleep_model_activity_awakealart_comment"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_gridview_activity_deviceselect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      
+                  
+                         style="@style/grayTextView"
+                        android:text="@string/alart_remind_tell1" />
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_gridview_activity_deviceselect"
+                        android:layout_marginRight="10dip"
+                        style="@style/grayTextView"
+                        android:textColor="@color/redColor"
+                        android:text="@string/alart_remind_saycontents" />
+                    <TextView
+                        android:id="@+id/textView111"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_gridview_activity_deviceselect"
+                        style="@style/grayTextView"
+                        android:layout_alignRight="@+id/textView11"
+                        android:layout_alignLeft="@+id/tv_gridview_activity_deviceselect"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/alart_remind_tell2" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+      <include
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          layout="@layout/model_save" />
+
+</LinearLayout>

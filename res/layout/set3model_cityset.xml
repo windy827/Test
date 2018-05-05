@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_cityset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip" >
+
+            <TextView
+                android:id="@+id/tv_press_item"
+                style="@style/saveernerger_textTopLeft"
+                android:layout_toRightOf="@+id/iv_model_playing_title_right"
+                android:text="@string/weatherset" />
+
+            <ImageView
+                android:id="@+id/iv_model_playing_title_right"
+                style="@style/saveernerger_ivTopLeft"
+                android:background="@drawable/weather" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_city_short1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/tv_activity_searchdevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/shortpress"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_city_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_activity_searchdevices"
+                android:layout_alignBottom="@+id/tv_activity_searchdevices"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="34dp"
+                android:text="@string/chooseCity1"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_activity_searchdevices"
+                android:layout_marginTop="5dp" >
+
+                <Button
+                    android:id="@+id/bt_short_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:text="@string/chooseProvice1" />
+
+                <Button
+                    android:id="@+id/bt_short_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:text="@string/chooseCity1" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            style="@style/horDiver_withMarginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_city_double1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/doubleclick"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_city_double"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv1"
+                android:layout_alignBottom="@+id/tv1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="34dp"
+                android:text="@string/chooseCity2"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_marginTop="2dp" >
+
+                <Button
+                    android:id="@+id/bt_double_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:text="@string/chooseProvice2" />
+
+                <Button
+                    android:id="@+id/bt_double_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:text="@string/chooseCity2" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include
+            style="@style/horDiver_withMarginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/model_diver_hor_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_city_long1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/longpress"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_city_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv8"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv8"
+                android:layout_marginRight="34dp"
+                android:text="@string/chooseCity3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv8"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/bt_long_pro"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:text="@string/chooseProvice3" />
+
+                <Button
+                    android:id="@+id/bt_long_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_shaixuan"
+                    android:text="@string/chooseCity3" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/model_diver_hor_whitebg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

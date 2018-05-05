@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:id="@+id/ll_readtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wholebackground"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="10dip"
+            android:layout_height="50dip" >
+
+            <TextView
+                android:id="@+id/tv_press_item"
+                style="@style/grayTextView_larger"
+                android:padding="10dip"
+                android:text="@string/readset" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+           	android:layout_marginTop="5dp"
+            android:background="@drawable/listitem_selector" >
+
+            <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_readtime_model_set_fulltime"
+                style="@style/switchStyle"
+                android:layout_marginTop="@dimen/Switch_marginTop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                 />
+
+            <TextView
+                android:id="@+id/tv_deviceName_listitem_devices"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+               style="@style/grayTextView"
+                android:text="@string/fullread" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/listitem_selector" >
+ 			<TextView
+                android:id="@+id/tv_deviceName_listitem_devices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+               style="@style/grayTextView"
+                android:text="@string/halfread" />
+            <com.tts168.autoset.view.WiperSwitch
+                android:id="@+id/switch_readtime_model_set_halftime"
+                style="@style/switchStyle"
+                android:layout_marginTop="@dimen/Switch_marginTop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+               
+             />
+        </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+
+    </LinearLayout>
+
+</LinearLayout>

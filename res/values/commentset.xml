@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  常用内容-->
+    <dimen name="textSize_largest">25sp</dimen>
+    <dimen name="textSize_large">20sp</dimen>
+    <dimen name="textSize_bigger">16sp</dimen>
+<dimen name="textSize_normal">14sp</dimen>
+<dimen name="rlHeight_normal">50dip</dimen>
+
+<!-- 发送或添加等大按钮长和宽的值-->
+<dimen name="bt_small_height">35dip</dimen>
+<dimen name="bt_large_height">50dip</dimen>
+<dimen name="bt_large_width">200dip</dimen>
+<dimen name="bt_large_MarginBottom">10dip</dimen>
+
+<dimen name="iv_height_largest">90dip</dimen>
+<dimen name="iv_height_terminal_width">90dip</dimen>
+<dimen name="iv_height_terminal_height">90dip</dimen>
+<dimen name="iv_height_large">120dip</dimen>
+<!-- 发送或添加等大按钮长和宽的值-->
+<dimen name="rl_height_smaller">40dip</dimen>
+<dimen name="rl_height_small">50dip</dimen>
+<dimen name="rl_height_comment">50dip</dimen>
+<dimen name="rl_height_large">70dip</dimen>
+<dimen name="rl_height_largest">100dip</dimen>
+<dimen name="rl_height_terminal">120dip</dimen>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_laughset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip" >
+
+            <ImageView
+                android:id="@+id/iv_model_playing_title_right"
+               style="@style/saveernerger_ivTopLeft"
+                android:background="@drawable/news" />
+
+            <TextView
+                android:id="@+id/tv_press_item"
+                style="@style/saveernerger_textTopLeft"
+           		 android:layout_toRightOf="@+id/iv_model_playing_title_right"
+                android:text="@string/laugh"
+              />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_laugh_short"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/tv_laugh_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_activity_searchdevices"
+                android:layout_alignBottom="@+id/tv_activity_searchdevices"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="34dp"
+                android:text="@string/chooseLaugh1"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_activity_searchdevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/shortpress"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+         <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_laugh_double"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/tv_laugh_double"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="34dp"
+                android:text="@string/chooseLaugh2"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/tv_laugh_double"
+                android:text="@string/doubleclick"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+       <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_laugh_long1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_normal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/listitem_selector" >
+
+            <TextView
+                android:id="@+id/tv_laugh_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="34dp"
+                android:text="@string/chooseLaugh3"
+                android:textColor="#ff000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/longpress"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/model_diver_hor_whitebg" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/whiteColor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="5dp"
+        
+       
+        >
+
+        <ImageView
+            android:id="@+id/iv_activity_about_pic"
+            android:layout_width="250dip"
+            android:layout_height="120dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dip"
+            android:background="@drawable/aboutlarksmart" />
+
+        <TextView
+            android:id="@+id/tv_activity_aboutus1_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+           android:visibility="invisible"
+            android:textSize="16sp"
+            android:textColor="@color/gray99_color"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+</LinearLayout>

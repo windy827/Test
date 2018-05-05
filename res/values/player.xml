@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="audiorecord_premission_alarm">"检测到获取录音权限已关闭，只有开启了该权限才能正常使用本软件：
+        \t\t例如您可以尝试如下步骤:360卫士->软件管理->权限管理->百灵智能,然后选择信任软件或者允许获取录音权限即可以正常使用了 ；
+        \t\t如果手机上没有安装第三方软件您可以尝试进入系统设置里，然后百灵智能的权限管理，选择信任软件或允许本软件的录音权限"</string>
+  <dimen name="suspend_player_btn_voice_search_margin_left">5.0dip</dimen>
+    <dimen name="suspend_player_panel_height">70dp</dimen>
+    <dimen name="tv_music_name_text_size">15.0sp</dimen>
+    <dimen name="tv_singer_text_size">12.0sp</dimen>  
+    
+     <dimen name="iv_player_player_widthAndheight_large">55dp</dimen>
+     <dimen name="iv_player_player_widthAndheight">40dp</dimen>
+      <dimen name="iv_player_player_widthAndheight_Small">30dp</dimen>
+</resources>

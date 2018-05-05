@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="aboutus_textcolor">@color/gray99_color</color>
+
+    <dimen name="aboutus_rlHeight">60dip</dimen>
+    <dimen name="aboutus_textMarginLeft">20dip</dimen>
+    <dimen name="aboutus_textMarginRight">20dip</dimen>
+    <dimen name="aboutus_textsize">20sp</dimen>
+
+    <string name="aboutus_bailinghelp">百灵帮助</string>
+    <string name="aboutus_public">百灵公众号</string>
+    <string name="aboutus_help">百灵智能</string>
+
+    <!-- 意见反馈 -->
+    <string name="aboutus_suggestion">意见反馈</string>
+    <string name="aboutus_suggestion_about">软硬类型：</string>
+    <string name="aboutus_suggestion_aboutApp">百灵APP软件</string>
+    <string name="aboutus_suggestion_aboutHard">百灵硬件终端</string>
+    <string name="aboutus_suggestion_feedback">反馈类型：</string>
+    <string name="aboutus_suggestion_feedback1">错误或异常</string>
+    <string name="aboutus_suggestion_feedback2">新想法</string>
+    <string name="aboutus_suggestion_feedback3">体验差</string>
+
+    <string-array name="aboutus_suggestion_feedbacktypeArray">
+        <item>@string/aboutus_suggestion_feedback1</item>
+        <item>@string/aboutus_suggestion_feedback2</item>
+        <item>@string/aboutus_suggestion_feedback3</item>
+    </string-array>
+
+    <string name="aboutus_info">关于我们</string>
+    <string name="aboutus_update">检测更新</string>
+
+    <!-- 关于我们 -->
+    <color name="aboutus_textcolor_gray">@color/gray99_color</color>
+
+    <string name="aboutus_weixin">公众帐号:</string>
+    <string name="aboutus_qq">QQ群:</string>
+    <string name="aboutus_homepage">网站地址:</string>
+
+    <color name="aboutus_info_textcolor">@color/gray99_color</color>
+
+    <string name="aboutus_weixin_info">语音天下</string>
+    <string name="aboutus_qq_info">666666</string>
+    <string name="aboutus_homepage_info">http://www.yxtx.com</string>
+
+    <style name="aboutus_ivToLeft">
+        <item name="android:layout_width">30dip</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="aboutus_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/aboutus_textcolor_gray</item>
+        <item name="android:textSize">@dimen/textSize_normal</item>
+    </style>
+
+    <dimen name="aboutus_MarginLeft">10dip</dimen>
+
+</resources>

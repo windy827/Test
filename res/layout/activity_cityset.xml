@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dip" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_cur_percent"
+                    style="@style/grayTextView_larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    
+                    android:text="当前城市:" />
+
+                <TextView
+                    android:id="@+id/tv_activity_cityset_city"
+                    style="@style/grayTextView_larger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    
+                    android:text="北京"
+                    android:textColor="@color/greenColor"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                 android:layout_marginLeft="20dp"
+            	android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/rg_activity_cityset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rb_activity_city_auto"
+                        style="@style/radiobutton_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:text="自动定位本地城市" />
+
+                    <RadioButton
+                        android:id="@+id/rb_activity_city_defined"
+                        style="@style/radiobutton_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:text="自定义本地城市" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="50dip" >
+
+                    <Button
+                        android:id="@+id/bt_activity_cityset_pro"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_shaixuan"
+                        android:paddingRight="20dip"
+                        android:text="@string/chooseProvice1" />
+
+                    <Button
+                        android:id="@+id/bt_activity_cityset_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bt_shaixuan"
+                        android:paddingRight="20dip"
+                        android:text="@string/chooseCity1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/include_diver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_activity_webmusicfirst_name"
+                    style="@style/blackTextView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    
+                    android:layout_marginTop="5dp"
+                    android:text="温馨提示:"
+                    android:textColor="@color/greenColor" />
+
+                <TextView
+                    android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+                    style="@style/grayTextView"
+                    android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_below="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/cityset_alarm1" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_listitem_activity_webmusicfirst_name"
+                    android:layout_below="@+id/tv_sleep_model_activity_awakealart_comment"
+                    android:layout_marginLeft="20dp" >
+
+                    <TextView
+                        android:id="@+id/tv_gridview_activity_deviceselect"
+                        style="@style/grayTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cityset_tell1" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/grayTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:layout_toRightOf="@+id/tv_gridview_activity_deviceselect"
+                        android:text="@string/cityset_saycontents"
+                        android:textColor="@color/redColor" />
+
+                    <TextView
+                        android:id="@+id/textView111"
+                        style="@style/grayTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tv_gridview_activity_deviceselect"
+                        android:layout_alignRight="@+id/textView11"
+                        android:layout_below="@+id/tv_gridview_activity_deviceselect"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/cityset_tell2" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/model_save" />
+        </LinearLayout>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            layout="@layout/model_progress_waiting" />
+    </RelativeLayout>
+
+</LinearLayout>

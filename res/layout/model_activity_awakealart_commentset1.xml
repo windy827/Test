@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <ImageView
+            android:id="@+id/iv_listitem_activity_webmusicfirst_detail"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/set" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_listitem_activity_webmusicfirst_detail"
+             style="@style/grayTextView_larger"
+            android:text="更多常用设置" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sleep_model_activity_awakealart_commentset"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/rl_height_small" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            style="@style/grayTextView"
+            android:text="小睡时间" />
+
+        <TextView
+            android:id="@+id/tv_sleep_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv1"
+            android:layout_alignBottom="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_toLeftOf="@+id/iv_listitem_activity_webmusicfirst_info"
+            style="@style/grayTextView"
+             android:singleLine="true"
+             android:ellipsize="marquee"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/iv_listitem_activity_webmusicfirst_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/detail" />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/horDiver_withMarginStyle"
+        layout="@layout/model_diver_hor_whitebg" />
+
+   <RelativeLayout
+       android:id="@+id/rl_ring_model_activity_awakealart_commen"
+       android:layout_width="match_parent"
+      android:background="@drawable/listitem_selector" 
+       android:layout_height="@dimen/rl_height_small" >
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            style="@style/grayTextView"
+            android:text="铃声选择" />
+
+        <TextView
+            android:id="@+id/tv_ring_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_2"
+            android:layout_alignBottom="@+id/tv_2"
+            android:layout_centerHorizontal="true"
+            style="@style/grayTextView"
+             android:layout_toRightOf="@+id/tv_2"
+            android:layout_toLeftOf="@+id/iv_listitem_activity_webmusicfirst_info"
+            android:singleLine="true"
+             android:ellipsize="marquee"
+            android:gravity="center|right"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/iv_listitem_activity_webmusicfirst_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/detail" />
+
+     
+
+    </RelativeLayout>
+       <include
+            style="@style/horDiver_withMarginStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/model_diver_hor_whitebg" />
+
+   <RelativeLayout
+       android:id="@+id/rl_ringtime_model_activity_awakealart_comment"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/rl_height_small"
+       android:background="@drawable/listitem_selector" >
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            style="@style/grayTextView"
+            android:text="响铃时间" />
+
+        <TextView
+            android:id="@+id/tv_ringtime_model_activity_awakealart_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv3"
+            android:layout_alignBottom="@+id/tv3"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/tv3"
+            android:layout_toLeftOf="@+id/iv_listitem_activity_webmusicfirst_info"
+            style="@style/grayTextView"
+            android:gravity="center|right"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/iv_listitem_activity_webmusicfirst_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/detail" />
+
+    </RelativeLayout>
+ <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+</LinearLayout>

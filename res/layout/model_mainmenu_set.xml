@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+         >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/include3"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_mainmenu_set_quick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/listitem_selector"
+                android:gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_item_terminal_child_devicename"
+                    style="@style/mainmenu_textLittleName"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mainmene_quicksetName" />
+
+                <ImageView
+                    android:id="@+id/iv_model_playing_like"
+                     style="@style/mainmenu_iv_detail" />
+            </RelativeLayout>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                layout="@layout/model_diver_hor_whitebg" />
+
+            <RelativeLayout
+                android:id="@+id/rl_mainmenu_set_high"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/listitem_selector"
+                android:gravity="center"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_listitem_alart_top_incident"
+                    style="@style/mainmenu_textLittleName"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mainmene_highsetName" />
+
+                <ImageView
+                    android:id="@+id/iv_model_player_sound"
+                    style="@style/mainmenu_iv_detail" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+             android:id="@+id/include3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/rl_left"
+            layout="@layout/model_diver_ver_whitebg" />
+
+        <RelativeLayout
+            android:id="@+id/rl_left"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_activity_terminal_refresh"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/tv_listitem_answerhelp_title_help"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/set" />
+
+            <TextView
+                android:id="@+id/tv_listitem_answerhelp_title_help"
+                style="@style/mainmenu_textLargeName"
+                android:layout_below="@+id/iv_activity_terminal_refresh"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:text="@string/mainmene_setName" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_diver_hor_whitebg" />
+
+</LinearLayout>

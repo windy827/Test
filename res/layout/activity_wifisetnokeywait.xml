@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/model_title" />
+
+ <RelativeLayout
+     android:id="@+id/relativeLayout1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_weight="3" >
+
+     <TextView
+         android:id="@+id/tv_activity_searchdevices"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        
+         android:layout_centerInParent="true"
+         android:text="1"
+         android:textColor="@color/redColor"
+         android:textSize="@dimen/LargeSize_60" />
+
+     <ImageView
+         android:id="@+id/iv_search"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        
+         
+         android:layout_centerInParent="true"
+         android:contentDescription="@string/ImgDescript"
+         android:background="@drawable/scaning_25"
+         
+         android:visibility="visible" />
+
+ 
+
+ </RelativeLayout>
+
+ <include
+     style="@style/horDiver_withMarginStyle"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="5dip"
+     layout="@layout/model_diver_hor_whitebg" />
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_weight="2" >
+
+     <ImageView
+         android:id="@+id/iv_activity_wifinokeywaiting1"
+         android:layout_width="@dimen/iv_height_large"
+         android:layout_height="@dimen/iv_height_large"
+         android:layout_above="@+id/iv_translate"
+         android:layout_toLeftOf="@+id/iv_translate"
+          android:contentDescription="@string/ImgDescript"
+         android:background="@drawable/wifisetwaiting1_selector" >
+         
+     </ImageView>
+
+     <ImageView
+         android:id="@+id/iv_activity_wifinokeywaiting2"
+         android:layout_width="@dimen/iv_height_large"
+         android:layout_height="@dimen/iv_height_large"
+         android:layout_above="@+id/iv_translate"
+         android:layout_toRightOf="@+id/iv_translate"
+          android:contentDescription="@string/ImgDescript"
+         android:background="@drawable/wifisetwaiting2_selector" >
+         
+     </ImageView>
+
+     <ImageView
+         android:id="@+id/iv_activity_wifinokeywaiting3"
+         android:layout_width="@dimen/iv_height_large"
+         android:layout_height="@dimen/iv_height_large"
+         android:layout_below="@+id/iv_translate"
+         android:layout_toLeftOf="@+id/iv_translate"
+          android:contentDescription="@string/ImgDescript"
+         android:background="@drawable/wifisetwaiting3_selector" >
+         
+     </ImageView>
+
+     <ImageView
+         android:id="@+id/iv_activity_wifinokeywaiting4"
+         android:layout_width="@dimen/iv_height_large"
+         android:layout_height="@dimen/iv_height_large"
+         android:layout_below="@+id/iv_translate"
+         android:layout_toRightOf="@+id/iv_translate"
+          android:contentDescription="@string/ImgDescript"
+         android:background="@drawable/wifisetwaiting4_selector" >
+         
+     </ImageView>
+
+     <ImageView
+         android:id="@+id/iv_activity_wifinokeywaiting_noremind"
+         android:layout_width="@dimen/iv_height_large"
+         android:layout_height="@dimen/iv_height_large"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+          android:contentDescription="@string/ImgDescript"
+         android:background="@drawable/wifisetwaiting_noremind_selector" >
+         
+     </ImageView>
+     <ImageView
+         android:id="@+id/iv_translate"
+         android:layout_width="1px"
+         android:layout_height="1px"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+          android:contentDescription="@string/ImgDescript"
+         android:background="@drawable/translate" >
+         
+     </ImageView>
+ </RelativeLayout>
+
+</LinearLayout>

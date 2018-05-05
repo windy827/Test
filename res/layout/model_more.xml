@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/setnor_color"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_more_model_more"
+        style="@style/menuSetRLStyle"
+       
+        android:background="@drawable/setting_item" >
+
+        <ImageView
+            android:id="@+id/iv_model_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/menu_aboutus" />
+
+        <TextView
+            android:id="@+id/bookmodel_tv_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/iv_model_login"
+            android:text="@string/more"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/bookViewTextSize" />
+
+    </RelativeLayout>
+
+</LinearLayout>

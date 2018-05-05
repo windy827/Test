@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="200" android:drawable="@drawable/scaning_23" />
+ 
+    <item android:duration="200" android:drawable="@drawable/scaning_21" />
+
+    <item android:duration="200" android:drawable="@drawable/scaning_19" />
+  
+    <item android:duration="200" android:drawable="@drawable/scaning_17" />
+   
+    <item android:duration="200" android:drawable="@drawable/scaning_15" />
+    
+    <item android:duration="200" android:drawable="@drawable/scaning_13" />
+  
+    <item android:duration="200" android:drawable="@drawable/scaning_11" />
+  
+    <item android:duration="200" android:drawable="@drawable/scaning_09" />
+   
+    <item android:duration="200" android:drawable="@drawable/scaning_07" />
+  
+    <item android:duration="200" android:drawable="@drawable/scaning_05" />
+  
+    <item android:duration="200" android:drawable="@drawable/scaning_03" />
+    
+    <item android:duration="200" android:drawable="@drawable/scaning_01" />
+  
+
+</animation-list>

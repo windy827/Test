@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <!-- 分割线 模板 -->
+    <style name="switchStyle" >
+        <item name="android:layout_width">100dip</item>
+        <item name="android:layout_height">38dip</item>
+       <item name="android:layout_marginTop">6dip</item>
+    </style>
+</resources>

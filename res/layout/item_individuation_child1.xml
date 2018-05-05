@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebackground"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_item_individuation_child1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/individuation_Rl_height" >
+
+            <TextView
+                android:id="@+id/tv_listitem_alart_close"
+                style="@style/individuation_textLeft1"
+                android:text="@string/individuation_name" />
+
+            <EditText
+                android:id="@+id/et_item_individuation_child1_name"
+                style="@style/individuation_et1"
+                android:layout_toRightOf="@+id/tv_listitem_alart_close"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/individuation_Rl_height" >
+
+            <EditText
+                android:id="@+id/et_item_individuation_child1_tel"
+                style="@style/individuation_et1"
+                android:layout_toRightOf="@+id/TextView01"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                style="@style/individuation_textLeft1"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/individuation_tel" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/individuation_Rl_height" >
+
+            <EditText
+                android:id="@+id/et_item_individuation_child1_email"
+                style="@style/individuation_et1"
+                android:layout_toRightOf="@+id/tv_listitem_alart_bottom_describe"
+                android:ems="10" />
+
+            <TextView
+                android:id="@+id/tv_listitem_alart_bottom_describe"
+                style="@style/individuation_textLeft1"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/individuation_email" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

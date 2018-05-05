@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+     <color name="individuation_blacktextcolor">@color/gray99_color</color>
+     <color name="individuation_graytextcolor">@color/gray99_color</color>
+    <dimen name="individuation_textsize_Min">20sp</dimen>
+   <dimen name="individuation_iv_sound_widthAndheight">40dip</dimen>
+<dimen name="individuation_Rl_height">40dip</dimen>
+
+
+ 
+<string name="individuation_name">名称:</string>
+<string name="individuation_name_hinit">请在此输入云宝姓名</string>
+<string name="individuation_tel">手机:</string>
+<string name="individuation_tel_hinit">请在此输入收集信息</string>
+<string name="individuation_email">邮箱:</string>
+<string name="individuation_email_hinit">请在此输入邮箱信息</string>
+
+ <style name="individuation_textLeft1" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        
+        <item name="android:layout_marginLeft">25dip</item>
+         <item name="android:textSize">@dimen/textSize_normal</item>
+        <item name="android:textColor">@color/individuation_graytextcolor</item>
+    </style>  
+   <style name="individuation_et1" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        
+         <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_marginRight">1dip</item>
+         <item name="android:textSize">@dimen/textSize_normal</item>
+        <item name="android:textColor">@color/individuation_blacktextcolor</item>
+    </style>   
+  
+    
+ 
+</resources>
